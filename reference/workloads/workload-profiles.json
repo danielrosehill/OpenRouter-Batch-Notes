@@ -1,0 +1,31 @@
+{
+  "written": "2026-10-31",
+  "author": "Claude Opus 5.5 for Daniel Rosehill",
+  "status": "assumed: illustrative per-request token shapes for common batch jobs, not measured from real runs",
+  "units": "tokens per request; output includes hidden reasoning tokens (they bill as output)",
+  "cache_assumptions": {
+    "cacheable_prefix": "tokens identical at the start of every request (system prompt, instructions, schema, few-shot examples, shared document). Prefixes are kept >= 1024 tokens because OpenAI and Anthropic do not cache shorter prefixes; profiles whose shared part is below that are given 0.",
+    "best_case_hit_rate": 1.0,
+    "requests_per_cache_write": 20,
+    "write_price_when_unpublished": "billed at the normal input price (automatic caching, no write premium)",
+    "unverified": "OpenRouter does not state that requests inside one batch hit each other's cache. Treat cached figures as the best case."
+  },
+  "profiles": [
+    {"id": "classify", "name": "Classification / labelling", "input": 1600, "output": 20, "cacheable_prefix": 1200,
+     "example": "sentiment, topic or spam label per row; instructions + few-shot examples shared, short item, one-word or tiny JSON answer"},
+    {"id": "extract", "name": "Structured extraction", "input": 4000, "output": 500, "cacheable_prefix": 1200,
+     "example": "pull fields from invoices, CVs, listings into a JSON schema; schema + examples shared"},
+    {"id": "summarise", "name": "Document summarisation", "input": 8000, "output": 600, "cacheable_prefix": 0,
+     "example": "one summary per article or transcript; instructions too short to cache"},
+    {"id": "doc_qa", "name": "Many questions over one long document", "input": 20000, "output": 300, "cacheable_prefix": 19500,
+     "example": "same contract, codebase or report in every request, different question each time"},
+    {"id": "judge", "name": "LLM-as-judge / eval grading", "input": 3000, "output": 250, "cacheable_prefix": 1500,
+     "example": "rubric shared, candidate answer + reference vary, short score and rationale"},
+    {"id": "translate", "name": "Translation / rewriting", "input": 2000, "output": 900, "cacheable_prefix": 1200,
+     "example": "glossary + style guide shared, segment translated or rewritten at similar length"},
+    {"id": "synth", "name": "Synthetic data generation", "input": 1500, "output": 2000, "cacheable_prefix": 1200,
+     "example": "persona/schema/examples shared, short seed varies, long generated sample"},
+    {"id": "reason", "name": "Reasoning-heavy solving", "input": 1000, "output": 5000, "cacheable_prefix": 0,
+     "example": "maths, code or planning problems with reasoning on; most output is hidden reasoning"}
+  ]
+}

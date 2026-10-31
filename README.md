@@ -21,6 +21,7 @@ bulk labelling and generation jobs.
 | 05 | [When to use batch](notebook/05-when-to-use-batch.md) | Decision rules distilled from the above |
 | 06 | [Open questions](notebook/06-open-questions.md) | Things not yet verified |
 | 07 | [Price tiers](notebook/07-price-tiers.md) | Rubric sorting the 2026-10-31 batch models into cheap / mid / expensive by output price, with input-side exceptions |
+| 08 | [Workload profiles](notebook/08-workload-profiles.md) | Input:output and cache weightings for eight common batch jobs, costed per model with and without caching |
 
 ## Reference snapshots
 

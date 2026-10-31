@@ -9,4 +9,6 @@ Dated copies of OpenRouter's own material, kept so the notebook can cite what th
 - `batch-models/2026-10-31_price-tiers.csv` / `.md`: derived, not an OpenRouter copy. Each model's tier, sub-band, input band and reference-job cost, from `scripts/price_tiers.py` (rubric: `notebook/07-price-tiers.md`).
 - `batch-models/2026-10-31_api-records.json`: full `/api/v1/models` records for the 71 `:batch` ids plus the 20 dynamic alias ids (`~` prefix or `latest`), fetched 2026-10-31 shortly after the main snapshot. Source of `canonical_slug`, `hugging_face_id`, `expiration_date` in the HF dataset.
 
+- `workloads/workload-profiles.json`: derived, assumed per-request token shapes and cache assumptions for eight batch workloads (notebook/08). `workloads/2026-10-31_workload-costs.csv` / `.md`: their cost per model, from `scripts/workload_costs.py`.
+
 The doc pages are served as Markdown by appending `.md` to any docs URL; `https://openrouter.ai/docs/llms.txt` indexes them. Both model endpoints are public (no key). Fetched 2026-10-31T14:52:01Z.

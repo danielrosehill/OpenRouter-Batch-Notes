@@ -17,3 +17,7 @@ None of these had been tested by 2026-10-31.
   partial results are returned and how a failed batch is charged.
 - **Why batch is sometimes dearer.** The single-route explanation in
   [02](02-batch-vs-sync-pricing.md) is inferred, not confirmed by OpenRouter.
+- **Prompt caching inside a batch.** 60 of 71 batch ids publish cache prices (2026-10-31), but
+  it's unknown whether requests in one batch hit each other's cache, or how often. Check
+  `usage.prompt_tokens_details.cached_tokens` on a pilot with a shared prefix of at least 1,024
+  tokens. The cached costs in [08](08-workload-profiles.md) assume every cacheable token hits.
