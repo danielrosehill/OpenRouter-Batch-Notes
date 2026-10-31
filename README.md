@@ -29,6 +29,12 @@ Dated copies of OpenRouter material in [`reference/`](reference/README.md), fetc
 - Batch API docs, verbatim: [quickstart](reference/docs/2026-10-31_batch-quickstart.md) and [feature guide](reference/docs/2026-10-31_batch-api-feature-guide.md).
 - [Models that support batch](reference/batch-models/2026-10-31_batch-models.md) ([JSON](reference/batch-models/2026-10-31_batch-models.json)): 71 `:batch` ids with prices and batch providers.
 
+## Hugging Face
+
+- Dataset (public): [danielrosehill/OR-Batch-Inference-Models](https://huggingface.co/datasets/danielrosehill/OR-Batch-Inference-Models). One CSV per snapshot in `data/`, split `snapshot_YYYY_MM_DD`: the batch-models snapshot plus the tier columns from entry 07. Source: `hf/dataset/`.
+- Space (public, static): [danielrosehill/OR-Batch-Inference-Costs](https://huggingface.co/spaces/danielrosehill/OR-Batch-Inference-Costs). Prices a job you set (input and output tokens) on every model, by tier. Reads the dataset in the browser and lists `data/*.csv` through the Hub API, so a new snapshot needs no Space change. Source: `hf/space/`.
+- To add a snapshot: write `hf/dataset/data/batch_models_<date>.csv` with the same columns, add a split for it to the `configs` block in `hf/dataset/README.md`, then `with-secrets bash -c 'export HF_TOKEN; hf upload danielrosehill/OR-Batch-Inference-Models hf/dataset . --repo-type dataset'`.
+
 ## Scripts
 
 - [`scripts/or_batch_prices.py`](scripts/or_batch_prices.py): pulls the public
