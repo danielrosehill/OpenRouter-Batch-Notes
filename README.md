@@ -22,6 +22,7 @@ bulk labelling and generation jobs.
 | 06 | [Open questions](notebook/06-open-questions.md) | Things not yet verified |
 | 07 | [Price tiers](notebook/07-price-tiers.md) | Rubric sorting the 2026-10-31 batch models into cheap / mid / expensive by output price, with input-side exceptions |
 | 08 | [Workload profiles](notebook/08-workload-profiles.md) | Input:output and cache weightings for eight common batch jobs, costed per model with and without caching |
+| 09 | [Benchmark-weighted value](notebook/09-benchmark-value.md) | Quality per workload from LMArena and Vectara, joined to 08's costs: Pareto frontier and good-enough pick per workload. PDF report: [`reports/2026-10-31_benchmark-value/`](reports/2026-10-31_benchmark-value/2026-10-31_benchmark-value-report.pdf) |
 | 09 | [Synthetic data diversity](notebook/09-synthetic-data-diversity.md) | Own probe of 11 batch models plus EQ-Bench: variety comes from seeding, which models repeat themselves, which require reasoning |
 
 ## Reference snapshots
@@ -48,6 +49,9 @@ Dated copies of OpenRouter material in [`reference/`](reference/README.md), fetc
 - [`scripts/price_tiers.py`](scripts/price_tiers.py): assigns each model in a batch-models CSV
   snapshot to a price tier (rubric in entry 07) and writes `<prefix>.csv` and `<prefix>.md`.
   Run with `python3 -I scripts/price_tiers.py <snapshot.csv> <out-prefix>`.
+
+- [`scripts/benchmark_scores.py`](scripts/benchmark_scores.py): joins LMArena and Vectara scores (mapping in `reference/benchmarks/model-map.json`, weights in `workload-benchmarks.json`) onto the workload costs; writes `<prefix>_signals.csv`, `_value.csv`, `_value.md`. Command in entry 09.
+- [`scripts/report_charts.py`](scripts/report_charts.py): SVG charts for the entry 09 PDF report; the report itself is `reports/<date>_benchmark-value/report.typ` (build command at its top).
 
 ## Notation
 

@@ -1,0 +1,35 @@
+{
+  "written": "2026-10-31",
+  "author": "Claude Opus 5.5 for Daniel Rosehill",
+  "status": "assumed: weights are judgement calls, not fitted to any measured task accuracy. Every signal is a proxy; none measures the batch job itself.",
+  "batch_specific_benchmark": "None found (search 2026-10-31). No public leaderboard measures quality against cost on high-volume labelling, extraction or synthetic-data jobs. The only direct measure is your own labelled pilot: cost per correct output.",
+  "signals": {
+    "lmarena_text:<category>": "LMArena text arena Elo for one category (text/latest, published 2026-10-28). Human pairwise preference, so it rewards answers people like, not label accuracy.",
+    "lmarena_document": "LMArena document arena Elo (document/latest, published 2026-09-13): users upload a document and ask about it. Closest available proxy for long-document work. 44 models.",
+    "vectara_fcr": "Vectara hallucination leaderboard factual consistency rate (%) when summarising a document (README, updated 2026-10-22). Measures faithfulness only, not summary quality."
+  },
+  "normalisation": {
+    "elo": "q = 1 / (1 + 10^((median - rating) / 400)), median over the batch models with a score in that signal: the chance of beating the median batch model. 0.5 = median.",
+    "vectara_fcr": "q = (fcr - min) / (max - min) over the batch models with a score, then shrunk to 0.1-0.9 so one signal can't dominate the Elo ones.",
+    "combine": "quality = weighted mean of the signals the model has, weights renormalised over those present. coverage = sum of the weights present. quality is left blank when coverage < 0.5."
+  },
+  "variant_rule": "Sources list several reasoning-effort variants of one model. For 'reason' the highest-effort variant is used; for every other workload the lowest-effort variant, because the costs in entry 08 assume reasoning off. The chosen variant name is reported in every row.",
+  "workloads": {
+    "classify":  {"signals": {"lmarena_text:instruction_following": 1.0},
+                  "why": "Label jobs fail on format and constraint compliance more than on knowledge."},
+    "extract":   {"signals": {"lmarena_text:instruction_following": 0.6, "lmarena_text:hard_prompts": 0.4},
+                  "why": "Schema compliance plus handling messy inputs. No maintained JSON-schema benchmark covers current models (JSONSchemaBench last updated 2025-03, StructEval 2025-09)."},
+    "summarise": {"signals": {"vectara_fcr": 0.4, "lmarena_document": 0.4, "lmarena_text:longer_query": 0.2},
+                  "why": "Faithfulness (Vectara) plus document-grounded preference."},
+    "doc_qa":    {"signals": {"lmarena_document": 0.7, "lmarena_text:longer_query": 0.3},
+                  "why": "Document arena is the only maintained document-grounded signal without an Artificial Analysis key (AA-LCR would be better)."},
+    "judge":     {"signals": {"lmarena_text:expert": 0.5, "lmarena_text:hard_prompts": 0.5},
+                  "why": "No maintained judge benchmark covers current models (RewardBench 2 results last updated 2025-12). Expert and hard prompts stand in for the discernment grading needs."},
+    "translate": {"signals": {"lmarena_text:non_english": 1.0},
+                  "why": "Non-English prompts as a whole. No Hebrew category exists; Hebrew quality is not measured."},
+    "synth":     {"signals": {"lmarena_text:creative_writing": 0.5, "lmarena_text:instruction_following": 0.5},
+                  "why": "Prompt/response pair generation needs varied, natural text that still follows the spec. No maintained synthetic-data or diversity leaderboard exists (AgoraBench last commit 2024-12, NoveltyBench has no leaderboard)."},
+    "reason":    {"signals": {"lmarena_text:math": 0.5, "lmarena_text:coding": 0.5},
+                  "why": "Maths and code categories, highest-effort variant."}
+  }
+}

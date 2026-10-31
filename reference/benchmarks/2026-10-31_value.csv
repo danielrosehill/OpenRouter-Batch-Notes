@@ -1,0 +1,569 @@
+snapshot_date,workload,model,tier,quality,coverage,usd_per_1k_no_cache,usd_per_1k_cached,variants_used,reasoning_variant,pareto,good_enough_pick
+2026-10-31,classify,anthropic/claude-opus-5.5,Mid,0.6372,1.0000,3.4000,1.2640,lmarena_text:instruction_following=Claude Opus 5.5 (High),True,True,False
+2026-10-31,classify,google/gemini-4-argon,Mid,0.6287,1.0000,1.7000,0.5682,lmarena_text:instruction_following=Gemini 4 Argon (High),True,True,False
+2026-10-31,classify,anthropic/claude-fable-5.1,Expensive,0.6099,1.0000,8.5000,3.0175,lmarena_text:instruction_following=Claude Fable 5.1 (Max),True,False,False
+2026-10-31,classify,anthropic/claude-opus-5,Mid,0.6052,1.0000,4.2500,1.7225,lmarena_text:instruction_following=Claude Opus 5 (High),True,False,False
+2026-10-31,classify,anthropic/claude-opus-4.6,Mid,0.5968,1.0000,4.2500,1.7225,lmarena_text:instruction_following=Claude Opus 4.6,False,False,False
+2026-10-31,classify,anthropic/claude-fable-5,Expensive,0.5875,1.0000,8.5000,3.4450,lmarena_text:instruction_following=Claude Fable 5 (High),True,False,False
+2026-10-31,classify,google/gemini-3.8-flash,Cheap,0.5737,1.0000,0.6375,0.2328,lmarena_text:instruction_following=Gemini 3.8 Flash (High),True,True,True
+2026-10-31,classify,anthropic/claude-sonnet-5.5,Mid,0.5725,1.0000,1.7000,0.6320,lmarena_text:instruction_following=Claude Sonnet 5.5 (xHigh),True,False,False
+2026-10-31,classify,anthropic/claude-opus-4.7,Mid,0.5678,1.0000,4.2500,1.7225,lmarena_text:instruction_following=Claude Opus 4.7,False,False,False
+2026-10-31,classify,google/gemini-3.7-flash,Cheap,0.5640,1.0000,0.6375,0.2328,lmarena_text:instruction_following=Gemini 3.7 Flash (High),True,False,False
+2026-10-31,classify,moonshotai/kimi-k3,Mid,0.5632,1.0000,3.8760,1.5367,lmarena_text:instruction_following=Kimi K3 (Max),True,False,False
+2026-10-31,classify,openai/gpt-5.6-sol,Mid,0.5597,1.0000,3.4000,1.3780,lmarena_text:instruction_following=GPT-5.6 Sol (xHigh),True,False,False
+2026-10-31,classify,z-ai/glm-5.3,Cheap,0.5576,1.0000,0.7600,0.3610,lmarena_text:instruction_following=GLM-5.3 (Max),True,False,False
+2026-10-31,classify,z-ai/glm-5.3-flash,Cheap,0.5566,1.0000,0.0836,0.0380,lmarena_text:instruction_following=GLM-5.3-Flash,False,True,False
+2026-10-31,classify,anthropic/claude-sonnet-4.6,Mid,0.5497,1.0000,2.5500,1.0335,lmarena_text:instruction_following=Claude Sonnet 4.6,False,False,False
+2026-10-31,classify,openai/gpt-5.5,Mid,0.5488,1.0000,4.3000,1.7350,lmarena_text:instruction_following=GPT-5.5,False,False,False
+2026-10-31,classify,deepseek/deepseek-v4.1-flash,Cheap,0.5469,1.0000,0.0830,0.0306,lmarena_text:instruction_following=DeepSeek-V4.1-Flash-20260910 (Max),True,True,False
+2026-10-31,classify,anthropic/claude-opus-4.5,Mid,0.5449,1.0000,4.2500,1.7225,lmarena_text:instruction_following=Claude Opus 4.5 (20251101),False,False,False
+2026-10-31,classify,openai/gpt-6.1-sol,Mid,0.5377,1.0000,1.7000,0.6320,lmarena_text:instruction_following=GPT-6.1 Sol (Max),True,False,False
+2026-10-31,classify,google/gemini-3.6-flash,Cheap,0.5373,1.0000,0.6375,0.2328,lmarena_text:instruction_following=Gemini 3.6 Flash (High),True,False,False
+2026-10-31,classify,google/gemini-3.1-pro-preview,Mid,0.5359,1.0000,1.7200,1.7200,lmarena_text:instruction_following=Gemini 3.1 Pro Preview,False,False,False
+2026-10-31,classify,google/gemini-3.5-flash,Mid,0.5343,1.0000,1.2900,0.5205,lmarena_text:instruction_following=Gemini 3.5 Flash (Medium),True,False,False
+2026-10-31,classify,anthropic/claude-opus-4.8,Mid,0.5315,1.0000,4.2500,1.7225,lmarena_text:instruction_following=Claude Opus 4.8,False,False,False
+2026-10-31,classify,anthropic/claude-sonnet-4.5,Mid,0.5260,1.0000,2.5500,1.0335,lmarena_text:instruction_following=Claude Sonnet 4.5 (20250929),False,False,False
+2026-10-31,classify,openai/gpt-5.4,Mid,0.5199,1.0000,2.1500,0.8675,lmarena_text:instruction_following=GPT-5.4,False,False,False
+2026-10-31,classify,openai/gpt-5.6-terra,Mid,0.5193,1.0000,1.7200,0.6940,lmarena_text:instruction_following=GPT-5.6 Terra (xHigh),True,False,False
+2026-10-31,classify,openai/gpt-6-astra,Expensive,0.5187,1.0000,8.5000,3.4450,lmarena_text:instruction_following=GPT-6 Astra (Max),True,False,False
+2026-10-31,classify,anthropic/claude-sonnet-5,Mid,0.5167,1.0000,1.7000,0.6890,lmarena_text:instruction_following=Claude Sonnet 5 (High),True,False,False
+2026-10-31,classify,qwen/qwen3.7-plus,Cheap,0.4978,1.0000,0.3864,0.3864,lmarena_text:instruction_following=Qwen3.7-Plus,False,False,False
+2026-10-31,classify,openai/gpt-5.6-luna,Cheap,0.4953,1.0000,0.1720,0.0694,lmarena_text:instruction_following=GPT-5.6 Luna (xHigh),True,False,False
+2026-10-31,classify,google/gemini-3-flash-preview,Cheap,0.4934,1.0000,0.4300,0.4300,lmarena_text:instruction_following=Gemini 3 Flash,False,False,False
+2026-10-31,classify,anthropic/claude-opus-4.1,Expensive,0.4892,1.0000,12.7500,5.1675,lmarena_text:instruction_following=Claude Opus 4.1 (20250805),False,False,False
+2026-10-31,classify,google/gemini-3.5-flash-lite,Cheap,0.4695,1.0000,0.2650,0.1111,lmarena_text:instruction_following=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,classify,openai/gpt-5.1,Mid,0.4670,1.0000,1.1000,0.4587,lmarena_text:instruction_following=GPT-5.1,False,False,False
+2026-10-31,classify,anthropic/claude-haiku-5.5,Cheap,0.4630,1.0000,0.0850,0.0345,lmarena_text:instruction_following=Claude Haiku 5.5 (High),True,False,False
+2026-10-31,classify,mistralai/mistral-medium-3-5,Mid,0.4626,1.0000,1.2750,1.2750,lmarena_text:instruction_following=Mistral Medium 3.5,True,False,False
+2026-10-31,classify,anthropic/claude-haiku-4.5,Cheap,0.4617,1.0000,0.8500,0.3445,lmarena_text:instruction_following=Claude Haiku 4.5 (20251001),False,False,False
+2026-10-31,classify,openai/gpt-6-sol,Mid,0.4566,1.0000,1.7000,0.6890,lmarena_text:instruction_following=GPT-6 Sol (Max),True,False,False
+2026-10-31,classify,openai/gpt-6-luna,Cheap,0.4494,1.0000,0.0850,0.0345,lmarena_text:instruction_following=GPT-6 Luna (Max),True,False,False
+2026-10-31,classify,openai/gpt-5.4-mini,Cheap,0.4484,1.0000,0.6450,0.2603,lmarena_text:instruction_following=GPT-5.4 mini (High),True,False,False
+2026-10-31,classify,openai/gpt-5.2,Mid,0.4453,1.0000,1.5400,0.6422,lmarena_text:instruction_following=GPT-5.2,False,False,False
+2026-10-31,classify,openai/gpt-5,Mid,0.4246,1.0000,1.1000,0.4587,lmarena_text:instruction_following=GPT-5 (High),True,False,False
+2026-10-31,classify,google/gemini-3.1-flash-lite,Cheap,0.4091,1.0000,0.2150,0.0867,lmarena_text:instruction_following=Gemini 3.1 Flash-Lite Preview,False,False,False
+2026-10-31,classify,openai/o3,Mid,0.3961,1.0000,1.6800,0.8250,lmarena_text:instruction_following=o3 (2025-04-16),False,False,False
+2026-10-31,classify,openai/gpt-4.1,Mid,0.3948,1.0000,1.6800,0.8250,lmarena_text:instruction_following=GPT-4.1 (2025-04-14),False,False,False
+2026-10-31,classify,x-ai/grok-4.3,Cheap,0.3932,1.0000,1.6400,0.6824,lmarena_text:instruction_following=Grok 4.3,False,False,False
+2026-10-31,classify,openai/gpt-5.4-nano,Cheap,0.3877,1.0000,0.1725,0.0699,lmarena_text:instruction_following=GPT-5.4 nano (High),True,False,False
+2026-10-31,classify,openai/gpt-5-mini,Cheap,0.3806,1.0000,0.2200,0.0917,lmarena_text:instruction_following=GPT-5 mini (High),True,False,False
+2026-10-31,classify,openai/gpt-4.1-mini,Cheap,0.3488,1.0000,0.3360,0.1650,lmarena_text:instruction_following=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,classify,openai/o4-mini,Cheap,0.3329,1.0000,0.9240,0.4537,lmarena_text:instruction_following=o4-mini (2025-04-16),False,False,False
+2026-10-31,classify,openai/gpt-oss-120b,Cheap,0.3297,1.0000,0.0501,0.0501,lmarena_text:instruction_following=gpt-oss-120b,False,True,False
+2026-10-31,classify,openai/o3-mini,Cheap,0.3261,1.0000,0.9240,0.6105,lmarena_text:instruction_following=o3-mini,False,False,False
+2026-10-31,classify,openai/gpt-5-nano,Cheap,0.3149,1.0000,0.0440,0.0184,lmarena_text:instruction_following=GPT-5 nano (High),True,True,False
+2026-10-31,classify,openai/gpt-4o,Mid,0.2806,1.0000,2.1000,1.3875,lmarena_text:instruction_following=GPT-4o (2024-05-13),False,False,False
+2026-10-31,classify,openai/gpt-4.1-nano,Cheap,0.2678,1.0000,0.0840,0.0413,lmarena_text:instruction_following=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,classify,openai/gpt-4o-mini,Cheap,0.2587,1.0000,0.1260,0.0833,lmarena_text:instruction_following=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,classify,openai/gpt-4-turbo,Mid,0.2490,1.0000,8.3000,8.3000,lmarena_text:instruction_following=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,classify,openai/gpt-oss-20b,Cheap,0.2351,1.0000,0.0406,0.0406,lmarena_text:instruction_following=gpt-oss-20b,False,True,False
+2026-10-31,classify,openai/gpt-6-luna-pro,Cheap,,0.0000,0.0850,0.0345,,False,False,False
+2026-10-31,classify,openai/gpt-5.6-luna-pro,Cheap,,0.0000,0.1720,0.0694,,False,False,False
+2026-10-31,classify,openai/gpt-6.1-terra,Cheap,,0.0000,0.8500,0.3160,,False,False,False
+2026-10-31,classify,openai/gpt-6.1-terra-pro,Cheap,,0.0000,0.8500,0.3160,,False,False,False
+2026-10-31,classify,openai/gpt-6-sol-pro,Mid,,0.0000,1.7000,0.6890,,False,False,False
+2026-10-31,classify,openai/gpt-6.1-sol-pro,Mid,,0.0000,1.7000,0.6320,,False,False,False
+2026-10-31,classify,openai/gpt-5.6-terra-pro,Mid,,0.0000,1.7200,0.6940,,False,False,False
+2026-10-31,classify,openai/gpt-5.6-sol-pro,Mid,,0.0000,3.4000,1.3780,,False,False,False
+2026-10-31,classify,openai/gpt-6-astra-pro,Expensive,,0.0000,8.5000,3.4450,,False,False,False
+2026-10-31,classify,openai/gpt-5-pro,Expensive,,0.0000,13.2000,13.2000,,False,False,False
+2026-10-31,classify,openai/gpt-5.2-pro,Expensive,,0.0000,18.4800,18.4800,,False,False,False
+2026-10-31,classify,openai/gpt-5.4-pro,Expensive,,0.0000,25.8000,25.8000,,False,False,False
+2026-10-31,classify,openai/gpt-5.5-pro,Expensive,,0.0000,25.8000,25.8000,,False,False,False
+2026-10-31,doc_qa,anthropic/claude-fable-5.1,Expensive,0.5764,1.0000,107.5000,18.4094,lmarena_document=claude-fable-5.1-max; lmarena_text:longer_query=Claude Fable 5.1 (Max),True,True,False
+2026-10-31,doc_qa,anthropic/claude-opus-5,Mid,0.5752,1.0000,53.7500,12.6781,lmarena_document=claude-opus-5-high; lmarena_text:longer_query=Claude Opus 5 (High),True,True,False
+2026-10-31,doc_qa,anthropic/claude-opus-4.6,Mid,0.5662,1.0000,53.7500,12.6781,lmarena_document=claude-opus-4-6; lmarena_text:longer_query=Claude Opus 4.6,False,False,False
+2026-10-31,doc_qa,anthropic/claude-fable-5,Expensive,0.5537,1.0000,107.5000,25.3562,lmarena_document=claude-fable-5; lmarena_text:longer_query=Claude Fable 5 (High),True,False,False
+2026-10-31,doc_qa,anthropic/claude-opus-4.7,Mid,0.5479,1.0000,53.7500,12.6781,lmarena_document=claude-opus-4-7; lmarena_text:longer_query=Claude Opus 4.7,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.5,Mid,0.5314,1.0000,54.5000,12.8187,lmarena_document=gpt-5.5; lmarena_text:longer_query=GPT-5.5,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.6-sol,Mid,0.5274,1.0000,43.0000,10.1425,lmarena_document=gpt-5.6-sol-xhigh; lmarena_text:longer_query=GPT-5.6 Sol (xHigh),True,True,False
+2026-10-31,doc_qa,anthropic/claude-sonnet-4.6,Mid,0.5264,1.0000,32.2500,7.6069,lmarena_document=claude-sonnet-4-6; lmarena_text:longer_query=Claude Sonnet 4.6,False,True,True
+2026-10-31,doc_qa,openai/gpt-5.4,Mid,0.5087,1.0000,27.2500,6.4094,lmarena_document=gpt-5.4; lmarena_text:longer_query=GPT-5.4,False,True,False
+2026-10-31,doc_qa,anthropic/claude-opus-4.8,Mid,0.5087,1.0000,53.7500,12.6781,lmarena_document=claude-opus-4-8; lmarena_text:longer_query=Claude Opus 4.8,False,False,False
+2026-10-31,doc_qa,google/gemini-3.5-flash,Mid,0.5067,1.0000,16.3500,3.8456,lmarena_document=gemini-3.5-flash-medium; lmarena_text:longer_query=Gemini 3.5 Flash (Medium),True,True,False
+2026-10-31,doc_qa,anthropic/claude-opus-4.5,Mid,0.5063,1.0000,53.7500,12.6781,lmarena_document=claude-opus-4-5-20251101; lmarena_text:longer_query=Claude Opus 4.5 (20251101),False,False,False
+2026-10-31,doc_qa,openai/gpt-5.6-terra,Mid,0.5045,1.0000,21.8000,5.1275,lmarena_document=gpt-5.6-terra-xhigh; lmarena_text:longer_query=GPT-5.6 Terra (xHigh),True,False,False
+2026-10-31,doc_qa,openai/gpt-6-astra,Expensive,0.5039,1.0000,107.5000,25.3562,lmarena_document=gpt-6-astra-max; lmarena_text:longer_query=GPT-6 Astra (Max),True,False,False
+2026-10-31,doc_qa,anthropic/claude-sonnet-5,Mid,0.5034,1.0000,21.5000,5.0713,lmarena_document=claude-sonnet-5-high; lmarena_text:longer_query=Claude Sonnet 5 (High),True,False,False
+2026-10-31,doc_qa,google/gemini-3.6-flash,Cheap,0.4983,1.0000,8.0625,1.4853,lmarena_document=gemini-3.6-flash-high; lmarena_text:longer_query=Gemini 3.6 Flash (High),True,True,False
+2026-10-31,doc_qa,anthropic/claude-sonnet-4.5,Mid,0.4922,1.0000,32.2500,7.6069,lmarena_document=claude-sonnet-4-5-20250929; lmarena_text:longer_query=Claude Sonnet 4.5 (20250929),False,False,False
+2026-10-31,doc_qa,google/gemini-3.1-pro-preview,Mid,0.4893,1.0000,21.8000,21.8000,lmarena_document=gemini-3.1-pro-preview; lmarena_text:longer_query=Gemini 3.1 Pro Preview,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.6-luna,Cheap,0.4826,1.0000,2.1800,0.5127,lmarena_document=gpt-5.6-luna-xhigh; lmarena_text:longer_query=GPT-5.6 Luna (xHigh),True,True,False
+2026-10-31,doc_qa,qwen/qwen3.7-plus,Cheap,0.4774,1.0000,4.8760,4.8760,lmarena_document=qwen3.7-plus; lmarena_text:longer_query=Qwen3.7-Plus,False,False,False
+2026-10-31,doc_qa,google/gemini-3-flash-preview,Cheap,0.4454,1.0000,5.4500,5.4500,lmarena_document=gemini-3-flash; lmarena_text:longer_query=Gemini 3 Flash,False,False,False
+2026-10-31,doc_qa,anthropic/claude-haiku-4.5,Cheap,0.4417,1.0000,10.7500,2.5356,lmarena_document=claude-haiku-4-5-20251001; lmarena_text:longer_query=Claude Haiku 4.5 (20251001),False,False,False
+2026-10-31,doc_qa,openai/gpt-5.1,Mid,0.4263,1.0000,14.0000,3.5797,lmarena_document=gpt-5.1; lmarena_text:longer_query=GPT-5.1,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.2,Mid,0.4170,1.0000,19.6000,5.0116,lmarena_document=gpt-5.2; lmarena_text:longer_query=GPT-5.2,False,False,False
+2026-10-31,doc_qa,openai/gpt-oss-20b,Cheap,,0.3000,0.5136,0.5136,lmarena_text:longer_query=gpt-oss-20b,False,False,False
+2026-10-31,doc_qa,openai/gpt-oss-120b,Cheap,,0.3000,0.6328,0.6328,lmarena_text:longer_query=gpt-oss-120b,False,False,False
+2026-10-31,doc_qa,deepseek/deepseek-v4.1-flash,Cheap,,0.3000,1.0450,0.1929,lmarena_text:longer_query=DeepSeek-V4.1-Flash-20260910 (Max),True,False,False
+2026-10-31,doc_qa,z-ai/glm-5.3-flash,Cheap,,0.3000,1.0540,0.3130,lmarena_text:longer_query=GLM-5.3-Flash,False,False,False
+2026-10-31,doc_qa,openai/gpt-5-nano,Cheap,,0.3000,0.5600,0.1432,lmarena_text:longer_query=GPT-5 nano (High),True,False,False
+2026-10-31,doc_qa,openai/gpt-4.1-nano,Cheap,,0.3000,1.0600,0.3653,lmarena_text:longer_query=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,doc_qa,anthropic/claude-haiku-5.5,Cheap,,0.3000,1.0750,0.2536,lmarena_text:longer_query=Claude Haiku 5.5 (High),True,False,False
+2026-10-31,doc_qa,openai/gpt-6-luna,Cheap,,0.3000,1.0750,0.2536,lmarena_text:longer_query=GPT-6 Luna (Max),True,False,False
+2026-10-31,doc_qa,openai/gpt-6-luna-pro,Cheap,,0.0000,1.0750,0.2536,,False,False,False
+2026-10-31,doc_qa,openai/gpt-4o-mini,Cheap,,0.3000,1.5900,0.8953,lmarena_text:longer_query=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,doc_qa,openai/gpt-5.6-luna-pro,Cheap,,0.0000,2.1800,0.5127,,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.4-nano,Cheap,,0.3000,2.1875,0.5202,lmarena_text:longer_query=GPT-5.4 nano (High),True,False,False
+2026-10-31,doc_qa,google/gemini-3.1-flash-lite,Cheap,,0.3000,2.7250,0.6409,lmarena_text:longer_query=Gemini 3.1 Flash-Lite Preview,False,False,False
+2026-10-31,doc_qa,openai/gpt-4.1-mini,Cheap,,0.3000,4.2400,1.4613,lmarena_text:longer_query=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,doc_qa,openai/gpt-5-mini,Cheap,,0.3000,2.8000,0.7159,lmarena_text:longer_query=GPT-5 mini (High),True,False,False
+2026-10-31,doc_qa,google/gemini-3.5-flash-lite,Cheap,,0.3000,3.3750,0.8741,lmarena_text:longer_query=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,doc_qa,google/gemini-3.7-flash,Cheap,,0.3000,8.0625,1.4853,lmarena_text:longer_query=Gemini 3.7 Flash (High),True,False,False
+2026-10-31,doc_qa,google/gemini-3.8-flash,Cheap,,0.3000,8.0625,1.4853,lmarena_text:longer_query=Gemini 3.8 Flash (High),True,False,False
+2026-10-31,doc_qa,z-ai/glm-5.3,Cheap,,0.3000,9.6000,3.1162,lmarena_text:longer_query=GLM-5.3 (Max),True,False,False
+2026-10-31,doc_qa,x-ai/grok-4.3,Cheap,,0.3000,20.6000,5.0390,lmarena_text:longer_query=Grok 4.3,False,False,False
+2026-10-31,doc_qa,openai/o3-mini,Cheap,,0.3000,11.6600,6.5656,lmarena_text:longer_query=o3-mini,False,False,False
+2026-10-31,doc_qa,openai/o4-mini,Cheap,,0.3000,11.6600,4.0184,lmarena_text:longer_query=o4-mini (2025-04-16),False,False,False
+2026-10-31,doc_qa,openai/gpt-5.4-mini,Cheap,,0.3000,8.1750,1.9228,lmarena_text:longer_query=GPT-5.4 mini (High),True,False,False
+2026-10-31,doc_qa,openai/gpt-6.1-terra,Cheap,,0.0000,10.7500,2.0725,,False,False,False
+2026-10-31,doc_qa,openai/gpt-6.1-terra-pro,Cheap,,0.0000,10.7500,2.0725,,False,False,False
+2026-10-31,doc_qa,mistralai/mistral-medium-3-5,Mid,,0.3000,16.1250,16.1250,lmarena_text:longer_query=Mistral Medium 3.5,True,False,False
+2026-10-31,doc_qa,openai/gpt-4.1,Mid,,0.3000,21.2000,7.3063,lmarena_text:longer_query=GPT-4.1 (2025-04-14),False,False,False
+2026-10-31,doc_qa,openai/o3,Mid,,0.3000,21.2000,7.3063,lmarena_text:longer_query=o3 (2025-04-16),False,False,False
+2026-10-31,doc_qa,openai/gpt-5,Mid,,0.3000,14.0000,3.5797,lmarena_text:longer_query=GPT-5 (High),True,False,False
+2026-10-31,doc_qa,anthropic/claude-sonnet-5.5,Mid,,0.3000,21.5000,4.1450,lmarena_text:longer_query=Claude Sonnet 5.5 (xHigh),True,False,False
+2026-10-31,doc_qa,google/gemini-4-argon,Mid,,0.3000,21.5000,3.1091,lmarena_text:longer_query=Gemini 4 Argon (High),True,False,False
+2026-10-31,doc_qa,openai/gpt-6-sol,Mid,,0.3000,21.5000,5.0713,lmarena_text:longer_query=GPT-6 Sol (Max),True,False,False
+2026-10-31,doc_qa,openai/gpt-6-sol-pro,Mid,,0.0000,21.5000,5.0713,,False,False,False
+2026-10-31,doc_qa,openai/gpt-6.1-sol,Mid,,0.3000,21.5000,4.1450,lmarena_text:longer_query=GPT-6.1 Sol (Max),True,False,False
+2026-10-31,doc_qa,openai/gpt-6.1-sol-pro,Mid,,0.0000,21.5000,4.1450,,False,False,False
+2026-10-31,doc_qa,openai/gpt-4o,Mid,,0.3000,26.5000,14.9219,lmarena_text:longer_query=GPT-4o (2024-05-13),False,False,False
+2026-10-31,doc_qa,openai/gpt-5.6-terra-pro,Mid,,0.0000,21.8000,5.1275,,False,False,False
+2026-10-31,doc_qa,anthropic/claude-opus-5.5,Mid,,0.3000,43.0000,8.2900,lmarena_text:longer_query=Claude Opus 5.5 (High),True,False,False
+2026-10-31,doc_qa,openai/gpt-5.6-sol-pro,Mid,,0.0000,43.0000,10.1425,,False,False,False
+2026-10-31,doc_qa,moonshotai/kimi-k3,Mid,,0.3000,49.0200,11.0067,lmarena_text:longer_query=Kimi K3 (Max),True,False,False
+2026-10-31,doc_qa,openai/gpt-4-turbo,Mid,,0.3000,104.5000,104.5000,lmarena_text:longer_query=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,doc_qa,openai/gpt-6-astra-pro,Expensive,,0.0000,107.5000,25.3562,,False,False,False
+2026-10-31,doc_qa,anthropic/claude-opus-4.1,Expensive,,0.3000,161.2500,38.0344,lmarena_text:longer_query=Claude Opus 4.1 (20250805),False,False,False
+2026-10-31,doc_qa,openai/gpt-5-pro,Expensive,,0.0000,168.0000,168.0000,,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.2-pro,Expensive,,0.0000,235.2000,235.2000,,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.4-pro,Expensive,,0.0000,327.0000,327.0000,,False,False,False
+2026-10-31,doc_qa,openai/gpt-5.5-pro,Expensive,,0.0000,327.0000,327.0000,,False,False,False
+2026-10-31,extract,anthropic/claude-opus-5.5,Mid,0.6251,1.0000,13.0000,10.8640,lmarena_text:hard_prompts=Claude Opus 5.5 (High); lmarena_text:instruction_following=Claude Opus 5.5 (High),True,True,False
+2026-10-31,extract,google/gemini-4-argon,Mid,0.6231,1.0000,6.5000,5.3682,lmarena_text:hard_prompts=Gemini 4 Argon (High); lmarena_text:instruction_following=Gemini 4 Argon (High),True,True,False
+2026-10-31,extract,anthropic/claude-fable-5.1,Expensive,0.6048,1.0000,32.5000,27.0175,lmarena_text:hard_prompts=Claude Fable 5.1 (Max); lmarena_text:instruction_following=Claude Fable 5.1 (Max),True,False,False
+2026-10-31,extract,anthropic/claude-opus-5,Mid,0.5988,1.0000,16.2500,13.7225,lmarena_text:hard_prompts=Claude Opus 5 (High); lmarena_text:instruction_following=Claude Opus 5 (High),True,False,False
+2026-10-31,extract,anthropic/claude-opus-4.6,Mid,0.5928,1.0000,16.2500,13.7225,lmarena_text:hard_prompts=Claude Opus 4.6; lmarena_text:instruction_following=Claude Opus 4.6,False,False,False
+2026-10-31,extract,anthropic/claude-fable-5,Expensive,0.5794,1.0000,32.5000,27.4450,lmarena_text:hard_prompts=Claude Fable 5 (High); lmarena_text:instruction_following=Claude Fable 5 (High),True,False,False
+2026-10-31,extract,google/gemini-3.8-flash,Cheap,0.5715,1.0000,2.4375,2.0328,lmarena_text:hard_prompts=Gemini 3.8 Flash (High); lmarena_text:instruction_following=Gemini 3.8 Flash (High),True,True,True
+2026-10-31,extract,anthropic/claude-opus-4.7,Mid,0.5630,1.0000,16.2500,13.7225,lmarena_text:hard_prompts=Claude Opus 4.7; lmarena_text:instruction_following=Claude Opus 4.7,False,False,False
+2026-10-31,extract,anthropic/claude-sonnet-5.5,Mid,0.5625,1.0000,6.5000,5.4320,lmarena_text:hard_prompts=Claude Sonnet 5.5 (xHigh); lmarena_text:instruction_following=Claude Sonnet 5.5 (xHigh),True,False,False
+2026-10-31,extract,google/gemini-3.7-flash,Cheap,0.5594,1.0000,2.4375,2.0328,lmarena_text:hard_prompts=Gemini 3.7 Flash (High); lmarena_text:instruction_following=Gemini 3.7 Flash (High),True,False,False
+2026-10-31,extract,moonshotai/kimi-k3,Mid,0.5579,1.0000,14.8200,12.4807,lmarena_text:hard_prompts=Kimi K3 (Max); lmarena_text:instruction_following=Kimi K3 (Max),True,False,False
+2026-10-31,extract,z-ai/glm-5.3-flash,Cheap,0.5521,1.0000,0.2900,0.2444,lmarena_text:hard_prompts=GLM-5.3-Flash; lmarena_text:instruction_following=GLM-5.3-Flash,False,True,False
+2026-10-31,extract,z-ai/glm-5.3,Cheap,0.5516,1.0000,2.8000,2.4010,lmarena_text:hard_prompts=GLM-5.3 (Max); lmarena_text:instruction_following=GLM-5.3 (Max),True,False,False
+2026-10-31,extract,openai/gpt-5.6-sol,Mid,0.5487,1.0000,13.0000,10.9780,lmarena_text:hard_prompts=GPT-5.6 Sol (xHigh); lmarena_text:instruction_following=GPT-5.6 Sol (xHigh),True,False,False
+2026-10-31,extract,openai/gpt-5.5,Mid,0.5438,1.0000,17.5000,14.9350,lmarena_text:hard_prompts=GPT-5.5; lmarena_text:instruction_following=GPT-5.5,False,False,False
+2026-10-31,extract,anthropic/claude-sonnet-4.6,Mid,0.5434,1.0000,9.7500,8.2335,lmarena_text:hard_prompts=Claude Sonnet 4.6; lmarena_text:instruction_following=Claude Sonnet 4.6,False,False,False
+2026-10-31,extract,deepseek/deepseek-v4.1-flash,Cheap,0.5409,1.0000,0.2750,0.2226,lmarena_text:hard_prompts=DeepSeek-V4.1-Flash-20260910 (Max); lmarena_text:instruction_following=DeepSeek-V4.1-Flash-20260910 (Max),True,True,False
+2026-10-31,extract,google/gemini-3.6-flash,Cheap,0.5367,1.0000,2.4375,2.0328,lmarena_text:hard_prompts=Gemini 3.6 Flash (High); lmarena_text:instruction_following=Gemini 3.6 Flash (High),True,False,False
+2026-10-31,extract,anthropic/claude-opus-4.5,Mid,0.5358,1.0000,16.2500,13.7225,lmarena_text:hard_prompts=Claude Opus 4.5 (20251101); lmarena_text:instruction_following=Claude Opus 4.5 (20251101),False,False,False
+2026-10-31,extract,google/gemini-3.1-pro-preview,Mid,0.5353,1.0000,7.0000,7.0000,lmarena_text:hard_prompts=Gemini 3.1 Pro Preview; lmarena_text:instruction_following=Gemini 3.1 Pro Preview,False,False,False
+2026-10-31,extract,google/gemini-3.5-flash,Mid,0.5346,1.0000,5.2500,4.4805,lmarena_text:hard_prompts=Gemini 3.5 Flash (Medium); lmarena_text:instruction_following=Gemini 3.5 Flash (Medium),True,False,False
+2026-10-31,extract,anthropic/claude-opus-4.8,Mid,0.5267,1.0000,16.2500,13.7225,lmarena_text:hard_prompts=Claude Opus 4.8; lmarena_text:instruction_following=Claude Opus 4.8,False,False,False
+2026-10-31,extract,openai/gpt-6.1-sol,Mid,0.5266,1.0000,6.5000,5.4320,lmarena_text:hard_prompts=GPT-6.1 Sol (Max); lmarena_text:instruction_following=GPT-6.1 Sol (Max),True,False,False
+2026-10-31,extract,openai/gpt-5.4,Mid,0.5166,1.0000,8.7500,7.4675,lmarena_text:hard_prompts=GPT-5.4; lmarena_text:instruction_following=GPT-5.4,False,False,False
+2026-10-31,extract,openai/gpt-5.6-terra,Mid,0.5164,1.0000,7.0000,5.9740,lmarena_text:hard_prompts=GPT-5.6 Terra (xHigh); lmarena_text:instruction_following=GPT-5.6 Terra (xHigh),True,False,False
+2026-10-31,extract,anthropic/claude-sonnet-4.5,Mid,0.5162,1.0000,9.7500,8.2335,lmarena_text:hard_prompts=Claude Sonnet 4.5 (20250929); lmarena_text:instruction_following=Claude Sonnet 4.5 (20250929),False,False,False
+2026-10-31,extract,openai/gpt-6-astra,Expensive,0.5120,1.0000,32.5000,27.4450,lmarena_text:hard_prompts=GPT-6 Astra (Max); lmarena_text:instruction_following=GPT-6 Astra (Max),True,False,False
+2026-10-31,extract,anthropic/claude-sonnet-5,Mid,0.5107,1.0000,6.5000,5.4890,lmarena_text:hard_prompts=Claude Sonnet 5 (High); lmarena_text:instruction_following=Claude Sonnet 5 (High),True,False,False
+2026-10-31,extract,google/gemini-3-flash-preview,Cheap,0.4982,1.0000,1.7500,1.7500,lmarena_text:hard_prompts=Gemini 3 Flash; lmarena_text:instruction_following=Gemini 3 Flash,False,False,False
+2026-10-31,extract,qwen/qwen3.7-plus,Cheap,0.4980,1.0000,1.3800,1.3800,lmarena_text:hard_prompts=Qwen3.7-Plus; lmarena_text:instruction_following=Qwen3.7-Plus,False,False,False
+2026-10-31,extract,openai/gpt-5.6-luna,Cheap,0.4920,1.0000,0.7000,0.5974,lmarena_text:hard_prompts=GPT-5.6 Luna (xHigh); lmarena_text:instruction_following=GPT-5.6 Luna (xHigh),True,False,False
+2026-10-31,extract,anthropic/claude-opus-4.1,Expensive,0.4828,1.0000,48.7500,41.1675,lmarena_text:hard_prompts=Claude Opus 4.1 (20250805); lmarena_text:instruction_following=Claude Opus 4.1 (20250805),False,False,False
+2026-10-31,extract,google/gemini-3.5-flash-lite,Cheap,0.4705,1.0000,1.2250,1.0711,lmarena_text:hard_prompts=Gemini 3.5 Flash-Lite; lmarena_text:instruction_following=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,extract,openai/gpt-5.1,Mid,0.4652,1.0000,5.0000,4.3587,lmarena_text:hard_prompts=GPT-5.1; lmarena_text:instruction_following=GPT-5.1,False,False,False
+2026-10-31,extract,mistralai/mistral-medium-3-5,Mid,0.4637,1.0000,4.8750,4.8750,lmarena_text:hard_prompts=Mistral Medium 3.5; lmarena_text:instruction_following=Mistral Medium 3.5,True,False,False
+2026-10-31,extract,anthropic/claude-haiku-5.5,Cheap,0.4551,1.0000,0.3250,0.2744,lmarena_text:hard_prompts=Claude Haiku 5.5 (High); lmarena_text:instruction_following=Claude Haiku 5.5 (High),True,False,False
+2026-10-31,extract,anthropic/claude-haiku-4.5,Cheap,0.4540,1.0000,3.2500,2.7445,lmarena_text:hard_prompts=Claude Haiku 4.5 (20251001); lmarena_text:instruction_following=Claude Haiku 4.5 (20251001),False,False,False
+2026-10-31,extract,openai/gpt-6-sol,Mid,0.4506,1.0000,6.5000,5.4890,lmarena_text:hard_prompts=GPT-6 Sol (Max); lmarena_text:instruction_following=GPT-6 Sol (Max),True,False,False
+2026-10-31,extract,openai/gpt-5.4-mini,Cheap,0.4482,1.0000,2.6250,2.2403,lmarena_text:hard_prompts=GPT-5.4 mini (High); lmarena_text:instruction_following=GPT-5.4 mini (High),True,False,False
+2026-10-31,extract,openai/gpt-5.2,Mid,0.4478,1.0000,7.0000,6.1022,lmarena_text:hard_prompts=GPT-5.2; lmarena_text:instruction_following=GPT-5.2,False,False,False
+2026-10-31,extract,openai/gpt-6-luna,Cheap,0.4397,1.0000,0.3250,0.2744,lmarena_text:hard_prompts=GPT-6 Luna (Max); lmarena_text:instruction_following=GPT-6 Luna (Max),True,False,False
+2026-10-31,extract,openai/gpt-5,Mid,0.4289,1.0000,5.0000,4.3587,lmarena_text:hard_prompts=GPT-5 (High); lmarena_text:instruction_following=GPT-5 (High),True,False,False
+2026-10-31,extract,google/gemini-3.1-flash-lite,Cheap,0.4150,1.0000,0.8750,0.7468,lmarena_text:hard_prompts=Gemini 3.1 Flash-Lite Preview; lmarena_text:instruction_following=Gemini 3.1 Flash-Lite Preview,False,False,False
+2026-10-31,extract,openai/o3,Mid,0.4042,1.0000,6.0000,5.1450,lmarena_text:hard_prompts=o3 (2025-04-16); lmarena_text:instruction_following=o3 (2025-04-16),False,False,False
+2026-10-31,extract,x-ai/grok-4.3,Cheap,0.3994,1.0000,5.0000,4.0424,lmarena_text:hard_prompts=Grok 4.3; lmarena_text:instruction_following=Grok 4.3,False,False,False
+2026-10-31,extract,openai/gpt-4.1,Mid,0.3935,1.0000,6.0000,5.1450,lmarena_text:hard_prompts=GPT-4.1 (2025-04-14); lmarena_text:instruction_following=GPT-4.1 (2025-04-14),False,False,False
+2026-10-31,extract,openai/gpt-5.4-nano,Cheap,0.3872,1.0000,0.7125,0.6099,lmarena_text:hard_prompts=GPT-5.4 nano (High); lmarena_text:instruction_following=GPT-5.4 nano (High),True,False,False
+2026-10-31,extract,openai/gpt-5-mini,Cheap,0.3827,1.0000,1.0000,0.8718,lmarena_text:hard_prompts=GPT-5 mini (High); lmarena_text:instruction_following=GPT-5 mini (High),True,False,False
+2026-10-31,extract,openai/gpt-4.1-mini,Cheap,0.3471,1.0000,1.2000,1.0290,lmarena_text:hard_prompts=GPT-4.1 mini (2025-04-14); lmarena_text:instruction_following=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,extract,openai/gpt-oss-120b,Cheap,0.3432,1.0000,0.1864,0.1864,lmarena_text:hard_prompts=gpt-oss-120b; lmarena_text:instruction_following=gpt-oss-120b,False,True,False
+2026-10-31,extract,openai/o4-mini,Cheap,0.3383,1.0000,3.3000,2.8297,lmarena_text:hard_prompts=o4-mini (2025-04-16); lmarena_text:instruction_following=o4-mini (2025-04-16),False,False,False
+2026-10-31,extract,openai/o3-mini,Cheap,0.3251,1.0000,3.3000,2.9865,lmarena_text:hard_prompts=o3-mini; lmarena_text:instruction_following=o3-mini,False,False,False
+2026-10-31,extract,openai/gpt-5-nano,Cheap,0.3162,1.0000,0.2000,0.1743,lmarena_text:hard_prompts=GPT-5 nano (High); lmarena_text:instruction_following=GPT-5 nano (High),True,False,False
+2026-10-31,extract,openai/gpt-4o,Mid,0.2731,1.0000,7.5000,6.7875,lmarena_text:hard_prompts=GPT-4o (2024-05-13); lmarena_text:instruction_following=GPT-4o (2024-05-13),False,False,False
+2026-10-31,extract,openai/gpt-4.1-nano,Cheap,0.2676,1.0000,0.3000,0.2572,lmarena_text:hard_prompts=GPT-4.1 nano (2025-04-14); lmarena_text:instruction_following=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,extract,openai/gpt-4o-mini,Cheap,0.2540,1.0000,0.4500,0.4073,lmarena_text:hard_prompts=GPT-4o mini (2024-07-18); lmarena_text:instruction_following=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,extract,openai/gpt-oss-20b,Cheap,0.2427,1.0000,0.1520,0.1520,lmarena_text:hard_prompts=gpt-oss-20b; lmarena_text:instruction_following=gpt-oss-20b,False,True,False
+2026-10-31,extract,openai/gpt-4-turbo,Mid,0.2414,1.0000,27.5000,27.5000,lmarena_text:hard_prompts=GPT-4 Turbo (2024-04-09); lmarena_text:instruction_following=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,extract,openai/gpt-6-luna-pro,Cheap,,0.0000,0.3250,0.2744,,False,False,False
+2026-10-31,extract,openai/gpt-5.6-luna-pro,Cheap,,0.0000,0.7000,0.5974,,False,False,False
+2026-10-31,extract,openai/gpt-6.1-terra,Cheap,,0.0000,3.2500,2.7160,,False,False,False
+2026-10-31,extract,openai/gpt-6.1-terra-pro,Cheap,,0.0000,3.2500,2.7160,,False,False,False
+2026-10-31,extract,openai/gpt-6-sol-pro,Mid,,0.0000,6.5000,5.4890,,False,False,False
+2026-10-31,extract,openai/gpt-6.1-sol-pro,Mid,,0.0000,6.5000,5.4320,,False,False,False
+2026-10-31,extract,openai/gpt-5.6-terra-pro,Mid,,0.0000,7.0000,5.9740,,False,False,False
+2026-10-31,extract,openai/gpt-5.6-sol-pro,Mid,,0.0000,13.0000,10.9780,,False,False,False
+2026-10-31,extract,openai/gpt-6-astra-pro,Expensive,,0.0000,32.5000,27.4450,,False,False,False
+2026-10-31,extract,openai/gpt-5-pro,Expensive,,0.0000,60.0000,60.0000,,False,False,False
+2026-10-31,extract,openai/gpt-5.2-pro,Expensive,,0.0000,84.0000,84.0000,,False,False,False
+2026-10-31,extract,openai/gpt-5.4-pro,Expensive,,0.0000,105.0000,105.0000,,False,False,False
+2026-10-31,extract,openai/gpt-5.5-pro,Expensive,,0.0000,105.0000,105.0000,,False,False,False
+2026-10-31,judge,google/gemini-4-argon,Mid,0.6106,1.0000,4.2500,2.8353,lmarena_text:expert=Gemini 4 Argon (High); lmarena_text:hard_prompts=Gemini 4 Argon (High),True,True,False
+2026-10-31,judge,anthropic/claude-opus-5.5,Mid,0.6059,1.0000,8.5000,5.8300,lmarena_text:expert=Claude Opus 5.5 (High); lmarena_text:hard_prompts=Claude Opus 5.5 (High),True,False,False
+2026-10-31,judge,anthropic/claude-opus-5,Mid,0.6007,1.0000,10.6250,7.4656,lmarena_text:expert=Claude Opus 5 (High); lmarena_text:hard_prompts=Claude Opus 5 (High),True,False,False
+2026-10-31,judge,anthropic/claude-fable-5.1,Expensive,0.5991,1.0000,21.2500,14.3969,lmarena_text:expert=Claude Fable 5.1 (Max); lmarena_text:hard_prompts=Claude Fable 5.1 (Max),True,False,False
+2026-10-31,judge,anthropic/claude-opus-4.6,Mid,0.5884,1.0000,10.6250,7.4656,lmarena_text:expert=Claude Opus 4.6; lmarena_text:hard_prompts=Claude Opus 4.6,False,False,False
+2026-10-31,judge,anthropic/claude-fable-5,Expensive,0.5770,1.0000,21.2500,14.9313,lmarena_text:expert=Claude Fable 5 (High); lmarena_text:hard_prompts=Claude Fable 5 (High),True,False,False
+2026-10-31,judge,google/gemini-3.8-flash,Cheap,0.5715,1.0000,1.5938,1.0878,lmarena_text:expert=Gemini 3.8 Flash (High); lmarena_text:hard_prompts=Gemini 3.8 Flash (High),True,True,False
+2026-10-31,judge,anthropic/claude-sonnet-5.5,Mid,0.5619,1.0000,4.2500,2.9150,lmarena_text:expert=Claude Sonnet 5.5 (xHigh); lmarena_text:hard_prompts=Claude Sonnet 5.5 (xHigh),True,False,False
+2026-10-31,judge,anthropic/claude-opus-4.7,Mid,0.5608,1.0000,10.6250,7.4656,lmarena_text:expert=Claude Opus 4.7; lmarena_text:hard_prompts=Claude Opus 4.7,False,False,False
+2026-10-31,judge,moonshotai/kimi-k3,Mid,0.5580,1.0000,9.6900,6.7659,lmarena_text:expert=Kimi K3 (Max); lmarena_text:hard_prompts=Kimi K3 (Max),True,False,False
+2026-10-31,judge,google/gemini-3.7-flash,Cheap,0.5551,1.0000,1.5938,1.0878,lmarena_text:expert=Gemini 3.7 Flash (High); lmarena_text:hard_prompts=Gemini 3.7 Flash (High),True,False,False
+2026-10-31,judge,z-ai/glm-5.3,Cheap,0.5524,1.0000,1.8500,1.3513,lmarena_text:expert=GLM-5.3 (Max); lmarena_text:hard_prompts=GLM-5.3 (Max),True,False,False
+2026-10-31,judge,z-ai/glm-5.3-flash,Cheap,0.5512,1.0000,0.1950,0.1380,lmarena_text:expert=GLM-5.3-Flash; lmarena_text:hard_prompts=GLM-5.3-Flash,False,True,True
+2026-10-31,judge,openai/gpt-5.6-sol,Mid,0.5462,1.0000,8.5000,5.9725,lmarena_text:expert=GPT-5.6 Sol (xHigh); lmarena_text:hard_prompts=GPT-5.6 Sol (xHigh),True,False,False
+2026-10-31,judge,openai/gpt-5.5,Mid,0.5393,1.0000,11.2500,8.0438,lmarena_text:expert=GPT-5.5; lmarena_text:hard_prompts=GPT-5.5,False,False,False
+2026-10-31,judge,deepseek/deepseek-v4.1-flash,Cheap,0.5362,1.0000,0.1875,0.1220,lmarena_text:expert=DeepSeek-V4.1-Flash-20260910 (Max); lmarena_text:hard_prompts=DeepSeek-V4.1-Flash-20260910 (Max),True,True,False
+2026-10-31,judge,anthropic/claude-sonnet-4.6,Mid,0.5357,1.0000,6.3750,4.4794,lmarena_text:expert=Claude Sonnet 4.6; lmarena_text:hard_prompts=Claude Sonnet 4.6,False,False,False
+2026-10-31,judge,google/gemini-3.6-flash,Cheap,0.5293,1.0000,1.5938,1.0878,lmarena_text:expert=Gemini 3.6 Flash (High); lmarena_text:hard_prompts=Gemini 3.6 Flash (High),True,False,False
+2026-10-31,judge,google/gemini-3.5-flash,Mid,0.5256,1.0000,3.3750,2.4131,lmarena_text:expert=Gemini 3.5 Flash (Medium); lmarena_text:hard_prompts=Gemini 3.5 Flash (Medium),True,False,False
+2026-10-31,judge,google/gemini-3.1-pro-preview,Mid,0.5245,1.0000,4.5000,4.5000,lmarena_text:expert=Gemini 3.1 Pro Preview; lmarena_text:hard_prompts=Gemini 3.1 Pro Preview,False,False,False
+2026-10-31,judge,openai/gpt-6.1-sol,Mid,0.5232,1.0000,4.2500,2.9150,lmarena_text:expert=GPT-6.1 Sol (Max); lmarena_text:hard_prompts=GPT-6.1 Sol (Max),True,False,False
+2026-10-31,judge,anthropic/claude-opus-4.8,Mid,0.5226,1.0000,10.6250,7.4656,lmarena_text:expert=Claude Opus 4.8; lmarena_text:hard_prompts=Claude Opus 4.8,False,False,False
+2026-10-31,judge,openai/gpt-5.6-terra,Mid,0.5214,1.0000,4.5000,3.2175,lmarena_text:expert=GPT-5.6 Terra (xHigh); lmarena_text:hard_prompts=GPT-5.6 Terra (xHigh),True,False,False
+2026-10-31,judge,anthropic/claude-opus-4.5,Mid,0.5206,1.0000,10.6250,7.4656,lmarena_text:expert=Claude Opus 4.5 (20251101); lmarena_text:hard_prompts=Claude Opus 4.5 (20251101),False,False,False
+2026-10-31,judge,openai/gpt-6-astra,Expensive,0.5151,1.0000,21.2500,14.9313,lmarena_text:expert=GPT-6 Astra (Max); lmarena_text:hard_prompts=GPT-6 Astra (Max),True,False,False
+2026-10-31,judge,anthropic/claude-sonnet-5,Mid,0.5126,1.0000,4.2500,2.9863,lmarena_text:expert=Claude Sonnet 5 (High); lmarena_text:hard_prompts=Claude Sonnet 5 (High),True,False,False
+2026-10-31,judge,openai/gpt-5.4,Mid,0.5115,1.0000,5.6250,4.0219,lmarena_text:expert=GPT-5.4; lmarena_text:hard_prompts=GPT-5.4,False,False,False
+2026-10-31,judge,anthropic/claude-sonnet-4.5,Mid,0.4997,1.0000,6.3750,4.4794,lmarena_text:expert=Claude Sonnet 4.5 (20250929); lmarena_text:hard_prompts=Claude Sonnet 4.5 (20250929),False,False,False
+2026-10-31,judge,openai/gpt-5.6-luna,Cheap,0.4964,1.0000,0.4500,0.3217,lmarena_text:expert=GPT-5.6 Luna (xHigh); lmarena_text:hard_prompts=GPT-5.6 Luna (xHigh),True,False,False
+2026-10-31,judge,google/gemini-3-flash-preview,Cheap,0.4945,1.0000,1.1250,1.1250,lmarena_text:expert=Gemini 3 Flash; lmarena_text:hard_prompts=Gemini 3 Flash,False,False,False
+2026-10-31,judge,qwen/qwen3.7-plus,Cheap,0.4938,1.0000,0.9200,0.9200,lmarena_text:expert=Qwen3.7-Plus; lmarena_text:hard_prompts=Qwen3.7-Plus,False,False,False
+2026-10-31,judge,openai/gpt-5.1,Mid,0.4579,1.0000,3.1250,2.3234,lmarena_text:expert=GPT-5.1; lmarena_text:hard_prompts=GPT-5.1,False,False,False
+2026-10-31,judge,anthropic/claude-haiku-5.5,Cheap,0.4575,1.0000,0.2125,0.1493,lmarena_text:expert=Claude Haiku 5.5 (High); lmarena_text:hard_prompts=Claude Haiku 5.5 (High),True,False,False
+2026-10-31,judge,google/gemini-3.5-flash-lite,Cheap,0.4574,1.0000,0.7625,0.5701,lmarena_text:expert=Gemini 3.5 Flash-Lite; lmarena_text:hard_prompts=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,judge,mistralai/mistral-medium-3-5,Mid,0.4524,1.0000,3.1875,3.1875,lmarena_text:expert=Mistral Medium 3.5; lmarena_text:hard_prompts=Mistral Medium 3.5,True,False,False
+2026-10-31,judge,anthropic/claude-opus-4.1,Expensive,0.4520,1.0000,31.8750,22.3969,lmarena_text:expert=Claude Opus 4.1 (20250805); lmarena_text:hard_prompts=Claude Opus 4.1 (20250805),False,False,False
+2026-10-31,judge,anthropic/claude-haiku-4.5,Cheap,0.4494,1.0000,2.1250,1.4931,lmarena_text:expert=Claude Haiku 4.5 (20251001); lmarena_text:hard_prompts=Claude Haiku 4.5 (20251001),False,False,False
+2026-10-31,judge,openai/gpt-5.4-mini,Cheap,0.4462,1.0000,1.6875,1.2066,lmarena_text:expert=GPT-5.4 mini (High); lmarena_text:hard_prompts=GPT-5.4 mini (High),True,False,False
+2026-10-31,judge,openai/gpt-6-sol,Mid,0.4455,1.0000,4.2500,2.9863,lmarena_text:expert=GPT-6 Sol (Max); lmarena_text:hard_prompts=GPT-6 Sol (Max),True,False,False
+2026-10-31,judge,openai/gpt-5.2,Mid,0.4433,1.0000,4.3750,3.2528,lmarena_text:expert=GPT-5.2; lmarena_text:hard_prompts=GPT-5.2,False,False,False
+2026-10-31,judge,openai/gpt-6-luna,Cheap,0.4391,1.0000,0.2125,0.1493,lmarena_text:expert=GPT-6 Luna (Max); lmarena_text:hard_prompts=GPT-6 Luna (Max),True,False,False
+2026-10-31,judge,openai/gpt-5,Mid,0.4286,1.0000,3.1250,2.3234,lmarena_text:expert=GPT-5 (High); lmarena_text:hard_prompts=GPT-5 (High),True,False,False
+2026-10-31,judge,google/gemini-3.1-flash-lite,Cheap,0.4085,1.0000,0.5625,0.4022,lmarena_text:expert=Gemini 3.1 Flash-Lite Preview; lmarena_text:hard_prompts=Gemini 3.1 Flash-Lite Preview,False,False,False
+2026-10-31,judge,openai/o3,Mid,0.4074,1.0000,4.0000,2.9312,lmarena_text:expert=o3 (2025-04-16); lmarena_text:hard_prompts=o3 (2025-04-16),False,False,False
+2026-10-31,judge,x-ai/grok-4.3,Cheap,0.3917,1.0000,3.5000,2.3030,lmarena_text:expert=Grok 4.3; lmarena_text:hard_prompts=Grok 4.3,False,False,False
+2026-10-31,judge,openai/gpt-5.4-nano,Cheap,0.3881,1.0000,0.4562,0.3280,lmarena_text:expert=GPT-5.4 nano (High); lmarena_text:hard_prompts=GPT-5.4 nano (High),True,False,False
+2026-10-31,judge,openai/gpt-5-mini,Cheap,0.3759,1.0000,0.6250,0.4647,lmarena_text:expert=GPT-5 mini (High); lmarena_text:hard_prompts=GPT-5 mini (High),True,False,False
+2026-10-31,judge,openai/gpt-4.1,Mid,0.3693,1.0000,4.0000,2.9312,lmarena_text:expert=GPT-4.1 (2025-04-14); lmarena_text:hard_prompts=GPT-4.1 (2025-04-14),False,False,False
+2026-10-31,judge,openai/gpt-oss-120b,Cheap,0.3501,1.0000,0.1228,0.1228,lmarena_text:expert=gpt-oss-120b; lmarena_text:hard_prompts=gpt-oss-120b,False,True,False
+2026-10-31,judge,openai/o4-mini,Cheap,0.3333,1.0000,2.2000,1.6122,lmarena_text:expert=o4-mini (2025-04-16); lmarena_text:hard_prompts=o4-mini (2025-04-16),False,False,False
+2026-10-31,judge,openai/gpt-4.1-mini,Cheap,0.3290,1.0000,0.8000,0.5862,lmarena_text:expert=GPT-4.1 mini (2025-04-14); lmarena_text:hard_prompts=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,judge,openai/o3-mini,Cheap,0.3133,1.0000,2.2000,1.8081,lmarena_text:expert=o3-mini; lmarena_text:hard_prompts=o3-mini,False,False,False
+2026-10-31,judge,openai/gpt-5-nano,Cheap,0.3058,1.0000,0.1250,0.0929,lmarena_text:expert=GPT-5 nano (High); lmarena_text:hard_prompts=GPT-5 nano (High),True,False,False
+2026-10-31,judge,openai/gpt-4.1-nano,Cheap,0.2525,1.0000,0.2000,0.1466,lmarena_text:expert=GPT-4.1 nano (2025-04-14); lmarena_text:hard_prompts=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,judge,openai/gpt-oss-20b,Cheap,0.2390,1.0000,0.1000,0.1000,lmarena_text:expert=gpt-oss-20b; lmarena_text:hard_prompts=gpt-oss-20b,False,True,False
+2026-10-31,judge,openai/gpt-4o,Mid,0.2389,1.0000,5.0000,4.1094,lmarena_text:expert=GPT-4o (2024-05-13); lmarena_text:hard_prompts=GPT-4o (2024-05-13),False,False,False
+2026-10-31,judge,openai/gpt-4o-mini,Cheap,0.2240,1.0000,0.3000,0.2466,lmarena_text:expert=GPT-4o mini (2024-07-18); lmarena_text:hard_prompts=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,judge,openai/gpt-4-turbo,Mid,0.2106,1.0000,18.7500,18.7500,lmarena_text:expert=GPT-4 Turbo (2024-04-09); lmarena_text:hard_prompts=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,judge,openai/gpt-6-luna-pro,Cheap,,0.0000,0.2125,0.1493,,False,False,False
+2026-10-31,judge,openai/gpt-5.6-luna-pro,Cheap,,0.0000,0.4500,0.3217,,False,False,False
+2026-10-31,judge,openai/gpt-6.1-terra,Cheap,,0.0000,2.1250,1.4575,,False,False,False
+2026-10-31,judge,openai/gpt-6.1-terra-pro,Cheap,,0.0000,2.1250,1.4575,,False,False,False
+2026-10-31,judge,openai/gpt-6-sol-pro,Mid,,0.0000,4.2500,2.9863,,False,False,False
+2026-10-31,judge,openai/gpt-6.1-sol-pro,Mid,,0.0000,4.2500,2.9150,,False,False,False
+2026-10-31,judge,openai/gpt-5.6-terra-pro,Mid,,0.0000,4.5000,3.2175,,False,False,False
+2026-10-31,judge,openai/gpt-5.6-sol-pro,Mid,,0.0000,8.5000,5.9725,,False,False,False
+2026-10-31,judge,openai/gpt-6-astra-pro,Expensive,,0.0000,21.2500,14.9313,,False,False,False
+2026-10-31,judge,openai/gpt-5-pro,Expensive,,0.0000,37.5000,37.5000,,False,False,False
+2026-10-31,judge,openai/gpt-5.2-pro,Expensive,,0.0000,52.5000,52.5000,,False,False,False
+2026-10-31,judge,openai/gpt-5.4-pro,Expensive,,0.0000,67.5000,67.5000,,False,False,False
+2026-10-31,judge,openai/gpt-5.5-pro,Expensive,,0.0000,67.5000,67.5000,,False,False,False
+2026-10-31,reason,google/gemini-4-argon,Mid,0.5997,1.0000,26.0000,26.0000,lmarena_text:coding=Gemini 4 Argon (High); lmarena_text:math=Gemini 4 Argon (High),False,True,False
+2026-10-31,reason,anthropic/claude-opus-5.5,Mid,0.5908,1.0000,52.0000,52.0000,lmarena_text:coding=Claude Opus 5.5 (High); lmarena_text:math=Claude Opus 5.5 (High),False,False,False
+2026-10-31,reason,anthropic/claude-opus-5,Mid,0.5897,1.0000,65.0000,65.0000,lmarena_text:coding=Claude Opus 5 (Max); lmarena_text:math=Claude Opus 5 (Max),False,False,False
+2026-10-31,reason,anthropic/claude-fable-5.1,Expensive,0.5889,1.0000,130.0000,130.0000,lmarena_text:coding=Claude Fable 5.1 (Max); lmarena_text:math=Claude Fable 5.1 (Max),False,False,False
+2026-10-31,reason,anthropic/claude-opus-4.6,Mid,0.5804,1.0000,65.0000,65.0000,lmarena_text:coding=Claude Opus 4.6 (High); lmarena_text:math=Claude Opus 4.6 (High),False,False,False
+2026-10-31,reason,google/gemini-3.8-flash,Cheap,0.5733,1.0000,9.7500,9.7500,lmarena_text:coding=Gemini 3.8 Flash (High); lmarena_text:math=Gemini 3.8 Flash (High),False,True,False
+2026-10-31,reason,anthropic/claude-fable-5,Expensive,0.5699,1.0000,130.0000,130.0000,lmarena_text:coding=Claude Fable 5 (High); lmarena_text:math=Claude Fable 5 (High),False,False,False
+2026-10-31,reason,anthropic/claude-opus-4.7,Mid,0.5582,1.0000,65.0000,65.0000,lmarena_text:coding=Claude Opus 4.7 (High); lmarena_text:math=Claude Opus 4.7 (High),False,False,False
+2026-10-31,reason,anthropic/claude-sonnet-5.5,Mid,0.5570,1.0000,26.0000,26.0000,lmarena_text:coding=Claude Sonnet 5.5 (xHigh); lmarena_text:math=Claude Sonnet 5.5 (xHigh),False,False,False
+2026-10-31,reason,z-ai/glm-5.3-flash,Cheap,0.5535,1.0000,0.9500,0.9500,lmarena_text:coding=GLM-5.3-Flash; lmarena_text:math=GLM-5.3-Flash,False,True,True
+2026-10-31,reason,google/gemini-3.7-flash,Cheap,0.5507,1.0000,9.7500,9.7500,lmarena_text:coding=Gemini 3.7 Flash (High); lmarena_text:math=Gemini 3.7 Flash (High),False,False,False
+2026-10-31,reason,moonshotai/kimi-k3,Mid,0.5464,1.0000,59.2800,59.2800,lmarena_text:coding=Kimi K3 (Max); lmarena_text:math=Kimi K3 (Max),False,False,False
+2026-10-31,reason,google/gemini-3.6-flash,Cheap,0.5444,1.0000,9.7500,9.7500,lmarena_text:coding=Gemini 3.6 Flash (High); lmarena_text:math=Gemini 3.6 Flash (High),False,False,False
+2026-10-31,reason,google/gemini-3.5-flash,Mid,0.5437,1.0000,23.2500,23.2500,lmarena_text:coding=Gemini 3.5 Flash (High); lmarena_text:math=Gemini 3.5 Flash (High),False,False,False
+2026-10-31,reason,z-ai/glm-5.3,Cheap,0.5416,1.0000,10.4500,10.4500,lmarena_text:coding=GLM-5.3 (Max); lmarena_text:math=GLM-5.3 (Max),False,False,False
+2026-10-31,reason,openai/gpt-5.4,Mid,0.5344,1.0000,38.7500,38.7500,lmarena_text:coding=GPT-5.4 (High); lmarena_text:math=GPT-5.4 (High),False,False,False
+2026-10-31,reason,deepseek/deepseek-v4.1-flash,Cheap,0.5334,1.0000,0.8000,0.8000,lmarena_text:coding=DeepSeek-V4.1-Flash-20260910 (Max); lmarena_text:math=DeepSeek-V4.1-Flash-20260910 (Max),False,True,False
+2026-10-31,reason,anthropic/claude-opus-4.8,Mid,0.5288,1.0000,65.0000,65.0000,lmarena_text:coding=Claude Opus 4.8 (High); lmarena_text:math=Claude Opus 4.8 (High),False,False,False
+2026-10-31,reason,openai/gpt-5.5,Mid,0.5264,1.0000,77.5000,77.5000,lmarena_text:coding=GPT-5.5 (High); lmarena_text:math=GPT-5.5 (High),False,False,False
+2026-10-31,reason,openai/gpt-6.1-sol,Mid,0.5256,1.0000,26.0000,26.0000,lmarena_text:coding=GPT-6.1 Sol (Max); lmarena_text:math=GPT-6.1 Sol (Max),False,False,False
+2026-10-31,reason,google/gemini-3.1-pro-preview,Mid,0.5235,1.0000,31.0000,31.0000,lmarena_text:coding=Gemini 3.1 Pro Preview; lmarena_text:math=Gemini 3.1 Pro Preview,False,False,False
+2026-10-31,reason,openai/gpt-5.6-sol,Mid,0.5224,1.0000,52.0000,52.0000,lmarena_text:coding=GPT-5.6 Sol (xHigh); lmarena_text:math=GPT-5.6 Sol (xHigh),False,False,False
+2026-10-31,reason,anthropic/claude-opus-4.5,Mid,0.5214,1.0000,65.0000,65.0000,"lmarena_text:coding=Claude Opus 4.5 (High, 32K, 20251101); lmarena_text:math=Claude Opus 4.5 (High, 32K, 20251101)",False,False,False
+2026-10-31,reason,anthropic/claude-sonnet-4.6,Mid,0.5211,1.0000,39.0000,39.0000,lmarena_text:coding=Claude Sonnet 4.6; lmarena_text:math=Claude Sonnet 4.6,False,False,False
+2026-10-31,reason,openai/gpt-6-astra,Expensive,0.5142,1.0000,130.0000,130.0000,lmarena_text:coding=GPT-6 Astra (Max); lmarena_text:math=GPT-6 Astra (Max),False,False,False
+2026-10-31,reason,anthropic/claude-sonnet-5,Mid,0.5117,1.0000,26.0000,26.0000,lmarena_text:coding=Claude Sonnet 5 (High); lmarena_text:math=Claude Sonnet 5 (High),False,False,False
+2026-10-31,reason,openai/gpt-5.6-terra,Mid,0.5094,1.0000,31.0000,31.0000,lmarena_text:coding=GPT-5.6 Terra (xHigh); lmarena_text:math=GPT-5.6 Terra (xHigh),False,False,False
+2026-10-31,reason,qwen/qwen3.7-plus,Cheap,0.5027,1.0000,4.8300,4.8300,lmarena_text:coding=Qwen3.7-Plus; lmarena_text:math=Qwen3.7-Plus,False,False,False
+2026-10-31,reason,anthropic/claude-sonnet-4.5,Mid,0.5004,1.0000,39.0000,39.0000,"lmarena_text:coding=Claude Sonnet 4.5 (High, 32K, 20250929); lmarena_text:math=Claude Sonnet 4.5 (High, 32K, 20250929)",False,False,False
+2026-10-31,reason,openai/gpt-5.6-luna,Cheap,0.4920,1.0000,3.1000,3.1000,lmarena_text:coding=GPT-5.6 Luna (xHigh); lmarena_text:math=GPT-5.6 Luna (xHigh),False,False,False
+2026-10-31,reason,anthropic/claude-opus-4.1,Expensive,0.4811,1.0000,195.0000,195.0000,"lmarena_text:coding=Claude Opus 4.1 (Thinking 16K, 20250805); lmarena_text:math=Claude Opus 4.1 (Thinking 16K, 20250805)",False,False,False
+2026-10-31,reason,openai/gpt-5.1,Mid,0.4736,1.0000,25.6250,25.6250,lmarena_text:coding=GPT-5.1 (High); lmarena_text:math=GPT-5.1 (High),False,False,False
+2026-10-31,reason,mistralai/mistral-medium-3-5,Mid,0.4685,1.0000,19.5000,19.5000,lmarena_text:coding=Mistral Medium 3.5; lmarena_text:math=Mistral Medium 3.5,False,False,False
+2026-10-31,reason,google/gemini-3.5-flash-lite,Cheap,0.4660,1.0000,6.4000,6.4000,lmarena_text:coding=Gemini 3.5 Flash-Lite; lmarena_text:math=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,reason,anthropic/claude-haiku-5.5,Cheap,0.4652,1.0000,1.3000,1.3000,lmarena_text:coding=Claude Haiku 5.5 (High); lmarena_text:math=Claude Haiku 5.5 (High),False,False,False
+2026-10-31,reason,google/gemini-3-flash-preview,Cheap,0.4620,1.0000,7.7500,7.7500,lmarena_text:coding=Gemini 3 Flash (Minimal); lmarena_text:math=Gemini 3 Flash (Minimal),False,False,False
+2026-10-31,reason,openai/gpt-5.2,Mid,0.4608,1.0000,35.8750,35.8750,lmarena_text:coding=GPT-5.2 (High); lmarena_text:math=GPT-5.2 (High),False,False,False
+2026-10-31,reason,openai/gpt-5.4-mini,Cheap,0.4429,1.0000,11.6250,11.6250,lmarena_text:coding=GPT-5.4 mini (High); lmarena_text:math=GPT-5.4 mini (High),False,False,False
+2026-10-31,reason,anthropic/claude-haiku-4.5,Cheap,0.4396,1.0000,13.0000,13.0000,lmarena_text:coding=Claude Haiku 4.5 (20251001); lmarena_text:math=Claude Haiku 4.5 (20251001),False,False,False
+2026-10-31,reason,openai/gpt-6-sol,Mid,0.4392,1.0000,26.0000,26.0000,lmarena_text:coding=GPT-6 Sol (Max); lmarena_text:math=GPT-6 Sol (Max),False,False,False
+2026-10-31,reason,openai/gpt-6-luna,Cheap,0.4356,1.0000,1.3000,1.3000,lmarena_text:coding=GPT-6 Luna (Max); lmarena_text:math=GPT-6 Luna (Max),False,False,False
+2026-10-31,reason,openai/gpt-5,Mid,0.4271,1.0000,25.6250,25.6250,lmarena_text:coding=GPT-5 (High); lmarena_text:math=GPT-5 (High),False,False,False
+2026-10-31,reason,openai/o3,Mid,0.4269,1.0000,21.0000,21.0000,lmarena_text:coding=o3 (2025-04-16); lmarena_text:math=o3 (2025-04-16),False,False,False
+2026-10-31,reason,google/gemini-3.1-flash-lite,Cheap,0.4230,1.0000,3.8750,3.8750,lmarena_text:coding=Gemini 3.1 Flash-Lite Preview; lmarena_text:math=Gemini 3.1 Flash-Lite Preview,False,False,False
+2026-10-31,reason,openai/gpt-5.4-nano,Cheap,0.4100,1.0000,3.2250,3.2250,lmarena_text:coding=GPT-5.4 nano (High); lmarena_text:math=GPT-5.4 nano (High),False,False,False
+2026-10-31,reason,x-ai/grok-4.3,Cheap,0.4044,1.0000,11.0000,11.0000,lmarena_text:coding=Grok 4.3; lmarena_text:math=Grok 4.3,False,False,False
+2026-10-31,reason,openai/gpt-5-mini,Cheap,0.3921,1.0000,5.1250,5.1250,lmarena_text:coding=GPT-5 mini (High); lmarena_text:math=GPT-5 mini (High),False,False,False
+2026-10-31,reason,openai/o3-mini,Cheap,0.3854,1.0000,11.5500,11.5500,lmarena_text:coding=o3-mini (High); lmarena_text:math=o3-mini (High),False,False,False
+2026-10-31,reason,openai/gpt-oss-120b,Cheap,0.3811,1.0000,0.7096,0.7096,lmarena_text:coding=gpt-oss-120b; lmarena_text:math=gpt-oss-120b,False,True,False
+2026-10-31,reason,openai/gpt-4.1,Mid,0.3759,1.0000,21.0000,21.0000,lmarena_text:coding=GPT-4.1 (2025-04-14); lmarena_text:math=GPT-4.1 (2025-04-14),False,False,False
+2026-10-31,reason,openai/o4-mini,Cheap,0.3743,1.0000,11.5500,11.5500,lmarena_text:coding=o4-mini (2025-04-16); lmarena_text:math=o4-mini (2025-04-16),False,False,False
+2026-10-31,reason,openai/gpt-4.1-mini,Cheap,0.3427,1.0000,4.2000,4.2000,lmarena_text:coding=GPT-4.1 mini (2025-04-14); lmarena_text:math=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,reason,openai/gpt-5-nano,Cheap,0.3168,1.0000,1.0250,1.0250,lmarena_text:coding=GPT-5 nano (High); lmarena_text:math=GPT-5 nano (High),False,False,False
+2026-10-31,reason,openai/gpt-oss-20b,Cheap,0.2892,1.0000,0.5840,0.5840,lmarena_text:coding=gpt-oss-20b; lmarena_text:math=gpt-oss-20b,False,True,False
+2026-10-31,reason,openai/gpt-4o,Mid,0.2653,1.0000,26.2500,26.2500,lmarena_text:coding=GPT-4o (2024-05-13); lmarena_text:math=GPT-4o (2024-08-06),False,False,False
+2026-10-31,reason,openai/gpt-4.1-nano,Cheap,0.2640,1.0000,1.0500,1.0500,lmarena_text:coding=GPT-4.1 nano (2025-04-14); lmarena_text:math=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,reason,openai/gpt-4o-mini,Cheap,0.2512,1.0000,1.5750,1.5750,lmarena_text:coding=GPT-4o mini (2024-07-18); lmarena_text:math=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,reason,openai/gpt-4-turbo,Mid,0.2422,1.0000,80.0000,80.0000,lmarena_text:coding=GPT-4 Turbo (2024-04-09); lmarena_text:math=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,reason,openai/gpt-6-luna-pro,Cheap,,0.0000,1.3000,1.3000,,False,False,False
+2026-10-31,reason,openai/gpt-5.6-luna-pro,Cheap,,0.0000,3.1000,3.1000,,False,False,False
+2026-10-31,reason,openai/gpt-6.1-terra,Cheap,,0.0000,13.0000,13.0000,,False,False,False
+2026-10-31,reason,openai/gpt-6.1-terra-pro,Cheap,,0.0000,13.0000,13.0000,,False,False,False
+2026-10-31,reason,openai/gpt-6-sol-pro,Mid,,0.0000,26.0000,26.0000,,False,False,False
+2026-10-31,reason,openai/gpt-6.1-sol-pro,Mid,,0.0000,26.0000,26.0000,,False,False,False
+2026-10-31,reason,openai/gpt-5.6-terra-pro,Mid,,0.0000,31.0000,31.0000,,False,False,False
+2026-10-31,reason,openai/gpt-5.6-sol-pro,Mid,,0.0000,52.0000,52.0000,,False,False,False
+2026-10-31,reason,openai/gpt-6-astra-pro,Expensive,,0.0000,130.0000,130.0000,,False,False,False
+2026-10-31,reason,openai/gpt-5-pro,Expensive,,0.0000,307.5000,307.5000,,False,False,False
+2026-10-31,reason,openai/gpt-5.2-pro,Expensive,,0.0000,430.5000,430.5000,,False,False,False
+2026-10-31,reason,openai/gpt-5.4-pro,Expensive,,0.0000,465.0000,465.0000,,False,False,False
+2026-10-31,reason,openai/gpt-5.5-pro,Expensive,,0.0000,465.0000,465.0000,,False,False,False
+2026-10-31,summarise,deepseek/deepseek-v4.1-flash,Cheap,0.7386,0.6000,0.4900,0.4900,lmarena_text:longer_query=DeepSeek-V4.1-Flash-20260910 (Max); vectara_fcr=deepseek-ai/DeepSeek-V4.1-Flash,True,True,True
+2026-10-31,summarise,openai/gpt-5.4-nano,Cheap,0.7252,0.6000,1.1750,1.1750,lmarena_text:longer_query=GPT-5.4 nano (High); vectara_fcr=openai/gpt-5.4-nano-2026-03-17,True,False,False
+2026-10-31,summarise,openai/gpt-5.4-mini,Cheap,0.6621,0.6000,4.3500,4.3500,lmarena_text:longer_query=GPT-5.4 mini (High); vectara_fcr=openai/gpt-5.4-mini-2026-03-17,True,False,False
+2026-10-31,summarise,openai/gpt-4.1,Mid,0.6481,0.6000,10.4000,10.4000,lmarena_text:longer_query=GPT-4.1 (2025-04-14); vectara_fcr=openai/gpt-4.1-2025-04-14,False,False,False
+2026-10-31,summarise,openai/gpt-6-sol,Mid,0.6315,0.6000,11.0000,11.0000,lmarena_text:longer_query=GPT-6 Sol (Max); vectara_fcr=openai/gpt-6-sol,True,False,False
+2026-10-31,summarise,openai/gpt-5.4,Mid,0.5849,1.0000,14.5000,14.5000,lmarena_document=gpt-5.4; lmarena_text:longer_query=GPT-5.4; vectara_fcr=openai/gpt-5.4-2026-03-05,False,False,False
+2026-10-31,summarise,anthropic/claude-fable-5.1,Expensive,0.5776,0.6000,55.0000,55.0000,lmarena_document=claude-fable-5.1-max; lmarena_text:longer_query=Claude Fable 5.1 (Max),True,False,False
+2026-10-31,summarise,anthropic/claude-opus-5,Mid,0.5757,0.6000,27.5000,27.5000,lmarena_document=claude-opus-5-high; lmarena_text:longer_query=Claude Opus 5 (High),True,False,False
+2026-10-31,summarise,anthropic/claude-opus-5.5,Mid,0.5703,0.6000,22.0000,22.0000,lmarena_text:longer_query=Claude Opus 5.5 (High); vectara_fcr=anthropic/claude-opus-5-5,True,False,False
+2026-10-31,summarise,google/gemini-3.1-flash-lite,Cheap,0.5630,0.6000,1.4500,1.4500,lmarena_text:longer_query=Gemini 3.1 Flash-Lite Preview; vectara_fcr=google/gemini-3.1-flash-lite-preview,False,False,False
+2026-10-31,summarise,anthropic/claude-fable-5,Expensive,0.5550,0.6000,55.0000,55.0000,lmarena_document=claude-fable-5; lmarena_text:longer_query=Claude Fable 5 (High),True,False,False
+2026-10-31,summarise,openai/gpt-5.5,Mid,0.5511,1.0000,29.0000,29.0000,lmarena_document=gpt-5.5; lmarena_text:longer_query=GPT-5.5; vectara_fcr=openai/gpt-5.5,False,False,False
+2026-10-31,summarise,openai/gpt-6-astra,Expensive,0.5469,1.0000,55.0000,55.0000,lmarena_document=gpt-6-astra-max; lmarena_text:longer_query=GPT-6 Astra (Max); vectara_fcr=openai/gpt-6-astra,True,False,False
+2026-10-31,summarise,anthropic/claude-sonnet-4.6,Mid,0.5213,1.0000,16.5000,16.5000,lmarena_document=claude-sonnet-4-6; lmarena_text:longer_query=Claude Sonnet 4.6; vectara_fcr=anthropic/claude-sonnet-4-6,False,False,False
+2026-10-31,summarise,anthropic/claude-opus-4.6,Mid,0.5124,1.0000,27.5000,27.5000,lmarena_document=claude-opus-4-6; lmarena_text:longer_query=Claude Opus 4.6; vectara_fcr=anthropic/claude-opus-4-6,False,False,False
+2026-10-31,summarise,anthropic/claude-opus-4.8,Mid,0.5101,0.6000,27.5000,27.5000,lmarena_document=claude-opus-4-8; lmarena_text:longer_query=Claude Opus 4.8,False,False,False
+2026-10-31,summarise,google/gemini-3.5-flash,Mid,0.5080,0.6000,8.7000,8.7000,lmarena_document=gemini-3.5-flash-medium; lmarena_text:longer_query=Gemini 3.5 Flash (Medium),True,False,False
+2026-10-31,summarise,anthropic/claude-opus-4.7,Mid,0.5055,1.0000,27.5000,27.5000,lmarena_document=claude-opus-4-7; lmarena_text:longer_query=Claude Opus 4.7; vectara_fcr=anthropic/claude-opus-4-7,False,False,False
+2026-10-31,summarise,google/gemini-3.1-pro-preview,Mid,0.5043,1.0000,11.6000,11.6000,lmarena_document=gemini-3.1-pro-preview; lmarena_text:longer_query=Gemini 3.1 Pro Preview; vectara_fcr=google/gemini-3.1-pro-preview,False,False,False
+2026-10-31,summarise,openai/gpt-5.6-terra,Mid,0.5043,0.6000,11.6000,11.6000,lmarena_document=gpt-5.6-terra-xhigh; lmarena_text:longer_query=GPT-5.6 Terra (xHigh),True,False,False
+2026-10-31,summarise,anthropic/claude-sonnet-5,Mid,0.5039,0.6000,11.0000,11.0000,lmarena_document=claude-sonnet-5-high; lmarena_text:longer_query=Claude Sonnet 5 (High),True,False,False
+2026-10-31,summarise,anthropic/claude-opus-4.5,Mid,0.5036,1.0000,27.5000,27.5000,lmarena_document=claude-opus-4-5-20251101; lmarena_text:longer_query=Claude Opus 4.5 (20251101); vectara_fcr=anthropic/claude-opus-4-5-20251101,False,False,False
+2026-10-31,summarise,openai/gpt-5.2,Mid,0.5015,1.0000,11.2000,11.2000,lmarena_document=gpt-5.2; lmarena_text:longer_query=GPT-5.2; vectara_fcr=openai/gpt-5.2-low-2025-12-11,False,False,False
+2026-10-31,summarise,google/gemini-3.6-flash,Cheap,0.4999,0.6000,4.1250,4.1250,lmarena_document=gemini-3.6-flash-high; lmarena_text:longer_query=Gemini 3.6 Flash (High),True,False,False
+2026-10-31,summarise,google/gemini-4-argon,Mid,0.4986,0.6000,11.0000,11.0000,lmarena_text:longer_query=Gemini 4 Argon (High); vectara_fcr=google/gemini-4-argon,True,False,False
+2026-10-31,summarise,anthropic/claude-haiku-4.5,Cheap,0.4873,1.0000,5.5000,5.5000,lmarena_document=claude-haiku-4-5-20251001; lmarena_text:longer_query=Claude Haiku 4.5 (20251001); vectara_fcr=anthropic/claude-haiku-4-5-20251001,False,False,False
+2026-10-31,summarise,openai/gpt-5.6-sol,Mid,0.4848,1.0000,22.0000,22.0000,lmarena_document=gpt-5.6-sol-xhigh; lmarena_text:longer_query=GPT-5.6 Sol (xHigh); vectara_fcr=openai/gpt-5.6-sol,True,False,False
+2026-10-31,summarise,openai/gpt-5.6-luna,Cheap,0.4823,0.6000,1.1600,1.1600,lmarena_document=gpt-5.6-luna-xhigh; lmarena_text:longer_query=GPT-5.6 Luna (xHigh),True,False,False
+2026-10-31,summarise,qwen/qwen3.7-plus,Cheap,0.4785,0.6000,2.3920,2.3920,lmarena_document=qwen3.7-plus; lmarena_text:longer_query=Qwen3.7-Plus,False,False,False
+2026-10-31,summarise,anthropic/claude-sonnet-4.5,Mid,0.4727,1.0000,16.5000,16.5000,lmarena_document=claude-sonnet-4-5-20250929; lmarena_text:longer_query=Claude Sonnet 4.5 (20250929); vectara_fcr=anthropic/claude-sonnet-4-5-20250929,False,False,False
+2026-10-31,summarise,openai/gpt-4o,Mid,0.4692,0.6000,13.0000,13.0000,lmarena_text:longer_query=GPT-4o (2024-05-13); vectara_fcr=openai/gpt-4o-2024-08-06,False,False,False
+2026-10-31,summarise,anthropic/claude-opus-4.1,Expensive,0.4629,0.6000,82.5000,82.5000,lmarena_text:longer_query=Claude Opus 4.1 (20250805); vectara_fcr=anthropic/claude-opus-4-1-20250805,False,False,False
+2026-10-31,summarise,openai/gpt-5.1,Mid,0.4559,1.0000,8.0000,8.0000,lmarena_document=gpt-5.1; lmarena_text:longer_query=GPT-5.1; vectara_fcr=openai/gpt-5.1-low-2025-11-13,False,False,False
+2026-10-31,summarise,openai/gpt-5-nano,Cheap,0.4476,0.6000,0.3200,0.3200,lmarena_text:longer_query=GPT-5 nano (High); vectara_fcr=openai/gpt-5-nano-2025-08-07,True,True,False
+2026-10-31,summarise,google/gemini-3-flash-preview,Cheap,0.4140,1.0000,2.9000,2.9000,lmarena_document=gemini-3-flash; lmarena_text:longer_query=Gemini 3 Flash; vectara_fcr=google/gemini-3-flash-preview,False,False,False
+2026-10-31,summarise,openai/gpt-5-mini,Cheap,0.3833,0.6000,1.6000,1.6000,lmarena_text:longer_query=GPT-5 mini (High); vectara_fcr=openai/gpt-5-mini-2025-08-07,True,False,False
+2026-10-31,summarise,openai/gpt-5,Mid,0.3361,0.6000,8.0000,8.0000,lmarena_text:longer_query=GPT-5 (High); vectara_fcr=openai/gpt-5-minimal-2025-08-07,True,False,False
+2026-10-31,summarise,openai/gpt-oss-120b,Cheap,0.3232,0.6000,0.3184,0.3184,lmarena_text:longer_query=gpt-oss-120b; vectara_fcr=openai/gpt-oss-120b,False,True,False
+2026-10-31,summarise,openai/o4-mini,Cheap,0.1700,0.6000,5.7200,5.7200,lmarena_text:longer_query=o4-mini (2025-04-16); vectara_fcr=openai/o4-mini-low-2025-04-16,False,False,False
+2026-10-31,summarise,openai/gpt-oss-20b,Cheap,,0.2000,0.2592,0.2592,lmarena_text:longer_query=gpt-oss-20b,False,False,False
+2026-10-31,summarise,z-ai/glm-5.3-flash,Cheap,,0.2000,0.5080,0.5080,lmarena_text:longer_query=GLM-5.3-Flash,False,False,False
+2026-10-31,summarise,openai/gpt-4.1-nano,Cheap,,0.2000,0.5200,0.5200,lmarena_text:longer_query=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,summarise,anthropic/claude-haiku-5.5,Cheap,,0.2000,0.5500,0.5500,lmarena_text:longer_query=Claude Haiku 5.5 (High),True,False,False
+2026-10-31,summarise,openai/gpt-6-luna,Cheap,,0.2000,0.5500,0.5500,lmarena_text:longer_query=GPT-6 Luna (Max),True,False,False
+2026-10-31,summarise,openai/gpt-6-luna-pro,Cheap,,0.0000,0.5500,0.5500,,False,False,False
+2026-10-31,summarise,openai/gpt-4o-mini,Cheap,,0.2000,0.7800,0.7800,lmarena_text:longer_query=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,summarise,openai/gpt-5.6-luna-pro,Cheap,,0.0000,1.1600,1.1600,,False,False,False
+2026-10-31,summarise,openai/gpt-4.1-mini,Cheap,,0.2000,2.0800,2.0800,lmarena_text:longer_query=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,summarise,google/gemini-3.5-flash-lite,Cheap,,0.2000,1.9500,1.9500,lmarena_text:longer_query=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,summarise,google/gemini-3.7-flash,Cheap,,0.2000,4.1250,4.1250,lmarena_text:longer_query=Gemini 3.7 Flash (High),True,False,False
+2026-10-31,summarise,google/gemini-3.8-flash,Cheap,,0.2000,4.1250,4.1250,lmarena_text:longer_query=Gemini 3.8 Flash (High),True,False,False
+2026-10-31,summarise,z-ai/glm-5.3,Cheap,,0.2000,4.8000,4.8000,lmarena_text:longer_query=GLM-5.3 (Max),True,False,False
+2026-10-31,summarise,x-ai/grok-4.3,Cheap,,0.2000,9.2000,9.2000,lmarena_text:longer_query=Grok 4.3,False,False,False
+2026-10-31,summarise,openai/o3-mini,Cheap,,0.2000,5.7200,5.7200,lmarena_text:longer_query=o3-mini,False,False,False
+2026-10-31,summarise,openai/gpt-6.1-terra,Cheap,,0.0000,5.5000,5.5000,,False,False,False
+2026-10-31,summarise,openai/gpt-6.1-terra-pro,Cheap,,0.0000,5.5000,5.5000,,False,False,False
+2026-10-31,summarise,mistralai/mistral-medium-3-5,Mid,,0.2000,8.2500,8.2500,lmarena_text:longer_query=Mistral Medium 3.5,True,False,False
+2026-10-31,summarise,openai/o3,Mid,,0.2000,10.4000,10.4000,lmarena_text:longer_query=o3 (2025-04-16),False,False,False
+2026-10-31,summarise,anthropic/claude-sonnet-5.5,Mid,,0.2000,11.0000,11.0000,lmarena_text:longer_query=Claude Sonnet 5.5 (xHigh),True,False,False
+2026-10-31,summarise,openai/gpt-6-sol-pro,Mid,,0.0000,11.0000,11.0000,,False,False,False
+2026-10-31,summarise,openai/gpt-6.1-sol,Mid,,0.2000,11.0000,11.0000,lmarena_text:longer_query=GPT-6.1 Sol (Max),True,False,False
+2026-10-31,summarise,openai/gpt-6.1-sol-pro,Mid,,0.0000,11.0000,11.0000,,False,False,False
+2026-10-31,summarise,openai/gpt-5.6-terra-pro,Mid,,0.0000,11.6000,11.6000,,False,False,False
+2026-10-31,summarise,openai/gpt-5.6-sol-pro,Mid,,0.0000,22.0000,22.0000,,False,False,False
+2026-10-31,summarise,moonshotai/kimi-k3,Mid,,0.2000,25.0800,25.0800,lmarena_text:longer_query=Kimi K3 (Max),True,False,False
+2026-10-31,summarise,openai/gpt-4-turbo,Mid,,0.2000,49.0000,49.0000,lmarena_text:longer_query=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,summarise,openai/gpt-6-astra-pro,Expensive,,0.0000,55.0000,55.0000,,False,False,False
+2026-10-31,summarise,openai/gpt-5-pro,Expensive,,0.0000,96.0000,96.0000,,False,False,False
+2026-10-31,summarise,openai/gpt-5.2-pro,Expensive,,0.0000,134.4000,134.4000,,False,False,False
+2026-10-31,summarise,openai/gpt-5.4-pro,Expensive,,0.4000,174.0000,174.0000,vectara_fcr=openai/gpt-5.4-pro-2026-03-05,False,False,False
+2026-10-31,summarise,openai/gpt-5.5-pro,Expensive,,0.0000,174.0000,174.0000,,False,False,False
+2026-10-31,synth,anthropic/claude-opus-5.5,Mid,0.6476,1.0000,23.0000,20.8640,lmarena_text:creative_writing=Claude Opus 5.5 (High); lmarena_text:instruction_following=Claude Opus 5.5 (High),True,True,False
+2026-10-31,synth,google/gemini-4-argon,Mid,0.6388,1.0000,11.5000,10.3683,lmarena_text:creative_writing=Gemini 4 Argon (High); lmarena_text:instruction_following=Gemini 4 Argon (High),True,True,False
+2026-10-31,synth,anthropic/claude-fable-5.1,Expensive,0.6192,1.0000,57.5000,52.0175,lmarena_text:creative_writing=Claude Fable 5.1 (Max); lmarena_text:instruction_following=Claude Fable 5.1 (Max),True,False,False
+2026-10-31,synth,anthropic/claude-opus-5,Mid,0.6003,1.0000,28.7500,26.2225,lmarena_text:creative_writing=Claude Opus 5 (High); lmarena_text:instruction_following=Claude Opus 5 (High),True,False,False
+2026-10-31,synth,anthropic/claude-fable-5,Expensive,0.5953,1.0000,57.5000,52.4450,lmarena_text:creative_writing=Claude Fable 5 (High); lmarena_text:instruction_following=Claude Fable 5 (High),True,False,False
+2026-10-31,synth,anthropic/claude-opus-4.6,Mid,0.5928,1.0000,28.7500,26.2225,lmarena_text:creative_writing=Claude Opus 4.6; lmarena_text:instruction_following=Claude Opus 4.6,False,False,False
+2026-10-31,synth,google/gemini-3.8-flash,Cheap,0.5869,1.0000,4.3125,3.9078,lmarena_text:creative_writing=Gemini 3.8 Flash (High); lmarena_text:instruction_following=Gemini 3.8 Flash (High),True,True,True
+2026-10-31,synth,google/gemini-3.7-flash,Cheap,0.5795,1.0000,4.3125,3.9078,lmarena_text:creative_writing=Gemini 3.7 Flash (High); lmarena_text:instruction_following=Gemini 3.7 Flash (High),True,False,False
+2026-10-31,synth,anthropic/claude-opus-4.7,Mid,0.5763,1.0000,28.7500,26.2225,lmarena_text:creative_writing=Claude Opus 4.7; lmarena_text:instruction_following=Claude Opus 4.7,False,False,False
+2026-10-31,synth,anthropic/claude-sonnet-5.5,Mid,0.5718,1.0000,11.5000,10.4320,lmarena_text:creative_writing=Claude Sonnet 5.5 (xHigh); lmarena_text:instruction_following=Claude Sonnet 5.5 (xHigh),True,False,False
+2026-10-31,synth,google/gemini-3.1-pro-preview,Mid,0.5618,1.0000,13.5000,13.5000,lmarena_text:creative_writing=Gemini 3.1 Pro Preview; lmarena_text:instruction_following=Gemini 3.1 Pro Preview,False,False,False
+2026-10-31,synth,moonshotai/kimi-k3,Mid,0.5578,1.0000,26.2200,23.8807,lmarena_text:creative_writing=Kimi K3 (Max); lmarena_text:instruction_following=Kimi K3 (Max),True,False,False
+2026-10-31,synth,z-ai/glm-5.3,Cheap,0.5566,1.0000,4.6750,4.2760,lmarena_text:creative_writing=GLM-5.3 (Max); lmarena_text:instruction_following=GLM-5.3 (Max),True,False,False
+2026-10-31,synth,google/gemini-3.5-flash,Mid,0.5533,1.0000,10.1250,9.3555,lmarena_text:creative_writing=Gemini 3.5 Flash (Medium); lmarena_text:instruction_following=Gemini 3.5 Flash (Medium),True,False,False
+2026-10-31,synth,google/gemini-3.6-flash,Cheap,0.5512,1.0000,4.3125,3.9078,lmarena_text:creative_writing=Gemini 3.6 Flash (High); lmarena_text:instruction_following=Gemini 3.6 Flash (High),True,False,False
+2026-10-31,synth,openai/gpt-5.6-sol,Mid,0.5511,1.0000,23.0000,20.9780,lmarena_text:creative_writing=GPT-5.6 Sol (xHigh); lmarena_text:instruction_following=GPT-5.6 Sol (xHigh),True,False,False
+2026-10-31,synth,openai/gpt-5.5,Mid,0.5472,1.0000,33.7500,31.1850,lmarena_text:creative_writing=GPT-5.5; lmarena_text:instruction_following=GPT-5.5,False,False,False
+2026-10-31,synth,z-ai/glm-5.3-flash,Cheap,0.5433,1.0000,0.4350,0.3894,lmarena_text:creative_writing=GLM-5.3-Flash; lmarena_text:instruction_following=GLM-5.3-Flash,False,True,False
+2026-10-31,synth,anthropic/claude-opus-4.5,Mid,0.5383,1.0000,28.7500,26.2225,lmarena_text:creative_writing=Claude Opus 4.5 (20251101); lmarena_text:instruction_following=Claude Opus 4.5 (20251101),False,False,False
+2026-10-31,synth,anthropic/claude-sonnet-4.6,Mid,0.5354,1.0000,17.2500,15.7335,lmarena_text:creative_writing=Claude Sonnet 4.6; lmarena_text:instruction_following=Claude Sonnet 4.6,False,False,False
+2026-10-31,synth,deepseek/deepseek-v4.1-flash,Cheap,0.5354,1.0000,0.3750,0.3226,lmarena_text:creative_writing=DeepSeek-V4.1-Flash-20260910 (Max); lmarena_text:instruction_following=DeepSeek-V4.1-Flash-20260910 (Max),True,True,False
+2026-10-31,synth,anthropic/claude-opus-4.8,Mid,0.5344,1.0000,28.7500,26.2225,lmarena_text:creative_writing=Claude Opus 4.8; lmarena_text:instruction_following=Claude Opus 4.8,False,False,False
+2026-10-31,synth,anthropic/claude-sonnet-4.5,Mid,0.5282,1.0000,17.2500,15.7335,lmarena_text:creative_writing=Claude Sonnet 4.5 (20250929); lmarena_text:instruction_following=Claude Sonnet 4.5 (20250929),False,False,False
+2026-10-31,synth,google/gemini-3-flash-preview,Cheap,0.5224,1.0000,3.3750,3.3750,lmarena_text:creative_writing=Gemini 3 Flash; lmarena_text:instruction_following=Gemini 3 Flash,False,False,False
+2026-10-31,synth,openai/gpt-6.1-sol,Mid,0.5221,1.0000,11.5000,10.4320,lmarena_text:creative_writing=GPT-6.1 Sol (Max); lmarena_text:instruction_following=GPT-6.1 Sol (Max),True,False,False
+2026-10-31,synth,openai/gpt-5.4,Mid,0.5149,1.0000,16.8750,15.5925,lmarena_text:creative_writing=GPT-5.4; lmarena_text:instruction_following=GPT-5.4,False,False,False
+2026-10-31,synth,qwen/qwen3.7-plus,Cheap,0.5112,1.0000,2.1850,2.1850,lmarena_text:creative_writing=Qwen3.7-Plus; lmarena_text:instruction_following=Qwen3.7-Plus,False,False,False
+2026-10-31,synth,openai/gpt-6-astra,Expensive,0.5090,1.0000,57.5000,52.4450,lmarena_text:creative_writing=GPT-6 Astra (Max); lmarena_text:instruction_following=GPT-6 Astra (Max),True,False,False
+2026-10-31,synth,anthropic/claude-sonnet-5,Mid,0.5051,1.0000,11.5000,10.4890,lmarena_text:creative_writing=Claude Sonnet 5 (High); lmarena_text:instruction_following=Claude Sonnet 5 (High),True,False,False
+2026-10-31,synth,openai/gpt-5.6-terra,Mid,0.5039,1.0000,13.5000,12.4740,lmarena_text:creative_writing=GPT-5.6 Terra (xHigh); lmarena_text:instruction_following=GPT-5.6 Terra (xHigh),True,False,False
+2026-10-31,synth,anthropic/claude-opus-4.1,Expensive,0.4872,1.0000,86.2500,78.6675,lmarena_text:creative_writing=Claude Opus 4.1 (20250805); lmarena_text:instruction_following=Claude Opus 4.1 (20250805),False,False,False
+2026-10-31,synth,google/gemini-3.5-flash-lite,Cheap,0.4851,1.0000,2.7250,2.5711,lmarena_text:creative_writing=Gemini 3.5 Flash-Lite; lmarena_text:instruction_following=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,synth,openai/gpt-5.6-luna,Cheap,0.4799,1.0000,1.3500,1.2474,lmarena_text:creative_writing=GPT-5.6 Luna (xHigh); lmarena_text:instruction_following=GPT-5.6 Luna (xHigh),True,False,False
+2026-10-31,synth,openai/gpt-5.1,Mid,0.4710,1.0000,10.9375,10.2963,lmarena_text:creative_writing=GPT-5.1; lmarena_text:instruction_following=GPT-5.1,False,False,False
+2026-10-31,synth,mistralai/mistral-medium-3-5,Mid,0.4478,1.0000,8.6250,8.6250,lmarena_text:creative_writing=Mistral Medium 3.5; lmarena_text:instruction_following=Mistral Medium 3.5,True,False,False
+2026-10-31,synth,openai/gpt-6-sol,Mid,0.4476,1.0000,11.5000,10.4890,lmarena_text:creative_writing=GPT-6 Sol (Max); lmarena_text:instruction_following=GPT-6 Sol (Max),True,False,False
+2026-10-31,synth,anthropic/claude-haiku-4.5,Cheap,0.4450,1.0000,5.7500,5.2445,lmarena_text:creative_writing=Claude Haiku 4.5 (20251001); lmarena_text:instruction_following=Claude Haiku 4.5 (20251001),False,False,False
+2026-10-31,synth,openai/gpt-5.2,Mid,0.4404,1.0000,15.3125,14.4147,lmarena_text:creative_writing=GPT-5.2; lmarena_text:instruction_following=GPT-5.2,False,False,False
+2026-10-31,synth,google/gemini-3.1-flash-lite,Cheap,0.4403,1.0000,1.6875,1.5593,lmarena_text:creative_writing=Gemini 3.1 Flash-Lite Preview; lmarena_text:instruction_following=Gemini 3.1 Flash-Lite Preview,False,False,False
+2026-10-31,synth,openai/gpt-5.4-mini,Cheap,0.4383,1.0000,5.0625,4.6777,lmarena_text:creative_writing=GPT-5.4 mini (High); lmarena_text:instruction_following=GPT-5.4 mini (High),True,False,False
+2026-10-31,synth,openai/gpt-6-luna,Cheap,0.4328,1.0000,0.5750,0.5245,lmarena_text:creative_writing=GPT-6 Luna (Max); lmarena_text:instruction_following=GPT-6 Luna (Max),True,False,False
+2026-10-31,synth,openai/gpt-5,Mid,0.4218,1.0000,10.9375,10.2963,lmarena_text:creative_writing=GPT-5 (High); lmarena_text:instruction_following=GPT-5 (High),True,False,False
+2026-10-31,synth,anthropic/claude-haiku-5.5,Cheap,0.4216,1.0000,0.5750,0.5245,lmarena_text:creative_writing=Claude Haiku 5.5 (High); lmarena_text:instruction_following=Claude Haiku 5.5 (High),True,False,False
+2026-10-31,synth,x-ai/grok-4.3,Cheap,0.4172,1.0000,5.5000,4.5424,lmarena_text:creative_writing=Grok 4.3; lmarena_text:instruction_following=Grok 4.3,False,False,False
+2026-10-31,synth,openai/gpt-4.1,Mid,0.4065,1.0000,9.5000,8.6450,lmarena_text:creative_writing=GPT-4.1 (2025-04-14); lmarena_text:instruction_following=GPT-4.1 (2025-04-14),False,False,False
+2026-10-31,synth,openai/o3,Mid,0.4037,1.0000,9.5000,8.6450,lmarena_text:creative_writing=o3 (2025-04-16); lmarena_text:instruction_following=o3 (2025-04-16),False,False,False
+2026-10-31,synth,openai/gpt-5-mini,Cheap,0.3731,1.0000,2.1875,2.0593,lmarena_text:creative_writing=GPT-5 mini (High); lmarena_text:instruction_following=GPT-5 mini (High),True,False,False
+2026-10-31,synth,openai/gpt-5.4-nano,Cheap,0.3694,1.0000,1.4000,1.2974,lmarena_text:creative_writing=GPT-5.4 nano (High); lmarena_text:instruction_following=GPT-5.4 nano (High),True,False,False
+2026-10-31,synth,openai/gpt-4.1-mini,Cheap,0.3405,1.0000,1.9000,1.7290,lmarena_text:creative_writing=GPT-4.1 mini (2025-04-14); lmarena_text:instruction_following=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,synth,openai/o4-mini,Cheap,0.3290,1.0000,5.2250,4.7548,lmarena_text:creative_writing=o4-mini (2025-04-16); lmarena_text:instruction_following=o4-mini (2025-04-16),False,False,False
+2026-10-31,synth,openai/gpt-oss-120b,Cheap,0.3155,1.0000,0.3164,0.3164,lmarena_text:creative_writing=gpt-oss-120b; lmarena_text:instruction_following=gpt-oss-120b,False,True,False
+2026-10-31,synth,openai/o3-mini,Cheap,0.3126,1.0000,5.2250,4.9115,lmarena_text:creative_writing=o3-mini; lmarena_text:instruction_following=o3-mini,False,False,False
+2026-10-31,synth,openai/gpt-4o,Mid,0.3012,1.0000,11.8750,11.1625,lmarena_text:creative_writing=GPT-4o (2024-05-13); lmarena_text:instruction_following=GPT-4o (2024-05-13),False,False,False
+2026-10-31,synth,openai/gpt-5-nano,Cheap,0.2932,1.0000,0.4375,0.4118,lmarena_text:creative_writing=GPT-5 nano (High); lmarena_text:instruction_following=GPT-5 nano (High),True,False,False
+2026-10-31,synth,openai/gpt-4o-mini,Cheap,0.2758,1.0000,0.7125,0.6697,lmarena_text:creative_writing=GPT-4o mini (2024-07-18); lmarena_text:instruction_following=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,synth,openai/gpt-4.1-nano,Cheap,0.2758,1.0000,0.4750,0.4323,lmarena_text:creative_writing=GPT-4.1 nano (2025-04-14); lmarena_text:instruction_following=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,synth,openai/gpt-4-turbo,Mid,0.2713,1.0000,37.5000,37.5000,lmarena_text:creative_writing=GPT-4 Turbo (2024-04-09); lmarena_text:instruction_following=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,synth,openai/gpt-oss-20b,Cheap,0.2274,1.0000,0.2600,0.2600,lmarena_text:creative_writing=gpt-oss-20b; lmarena_text:instruction_following=gpt-oss-20b,False,True,False
+2026-10-31,synth,openai/gpt-6-luna-pro,Cheap,,0.0000,0.5750,0.5245,,False,False,False
+2026-10-31,synth,openai/gpt-5.6-luna-pro,Cheap,,0.0000,1.3500,1.2474,,False,False,False
+2026-10-31,synth,openai/gpt-6.1-terra,Cheap,,0.0000,5.7500,5.2160,,False,False,False
+2026-10-31,synth,openai/gpt-6.1-terra-pro,Cheap,,0.0000,5.7500,5.2160,,False,False,False
+2026-10-31,synth,openai/gpt-6-sol-pro,Mid,,0.0000,11.5000,10.4890,,False,False,False
+2026-10-31,synth,openai/gpt-6.1-sol-pro,Mid,,0.0000,11.5000,10.4320,,False,False,False
+2026-10-31,synth,openai/gpt-5.6-terra-pro,Mid,,0.0000,13.5000,12.4740,,False,False,False
+2026-10-31,synth,openai/gpt-5.6-sol-pro,Mid,,0.0000,23.0000,20.9780,,False,False,False
+2026-10-31,synth,openai/gpt-6-astra-pro,Expensive,,0.0000,57.5000,52.4450,,False,False,False
+2026-10-31,synth,openai/gpt-5-pro,Expensive,,0.0000,131.2500,131.2500,,False,False,False
+2026-10-31,synth,openai/gpt-5.2-pro,Expensive,,0.0000,183.7500,183.7500,,False,False,False
+2026-10-31,synth,openai/gpt-5.4-pro,Expensive,,0.0000,202.5000,202.5000,,False,False,False
+2026-10-31,synth,openai/gpt-5.5-pro,Expensive,,0.0000,202.5000,202.5000,,False,False,False
+2026-10-31,translate,google/gemini-4-argon,Mid,0.6261,1.0000,6.5000,5.3682,lmarena_text:non_english=Gemini 4 Argon (High),True,True,False
+2026-10-31,translate,anthropic/claude-fable-5.1,Expensive,0.6110,1.0000,32.5000,27.0175,lmarena_text:non_english=Claude Fable 5.1 (Max),True,False,False
+2026-10-31,translate,anthropic/claude-opus-5.5,Mid,0.6060,1.0000,13.0000,10.8640,lmarena_text:non_english=Claude Opus 5.5 (High),True,False,False
+2026-10-31,translate,anthropic/claude-opus-5,Mid,0.5944,1.0000,16.2500,13.7225,lmarena_text:non_english=Claude Opus 5 (High),True,False,False
+2026-10-31,translate,google/gemini-3.8-flash,Cheap,0.5859,1.0000,2.4375,2.0328,lmarena_text:non_english=Gemini 3.8 Flash (High),True,True,True
+2026-10-31,translate,google/gemini-3.7-flash,Cheap,0.5778,1.0000,2.4375,2.0328,lmarena_text:non_english=Gemini 3.7 Flash (High),True,False,False
+2026-10-31,translate,anthropic/claude-opus-4.6,Mid,0.5752,1.0000,16.2500,13.7225,lmarena_text:non_english=Claude Opus 4.6,False,False,False
+2026-10-31,translate,anthropic/claude-fable-5,Expensive,0.5723,1.0000,32.5000,27.4450,lmarena_text:non_english=Claude Fable 5 (High),True,False,False
+2026-10-31,translate,google/gemini-3.1-pro-preview,Mid,0.5645,1.0000,7.4000,7.4000,lmarena_text:non_english=Gemini 3.1 Pro Preview,False,False,False
+2026-10-31,translate,anthropic/claude-opus-4.7,Mid,0.5618,1.0000,16.2500,13.7225,lmarena_text:non_english=Claude Opus 4.7,False,False,False
+2026-10-31,translate,google/gemini-3.5-flash,Mid,0.5583,1.0000,5.5500,4.7805,lmarena_text:non_english=Gemini 3.5 Flash (Medium),True,False,False
+2026-10-31,translate,google/gemini-3.6-flash,Cheap,0.5550,1.0000,2.4375,2.0328,lmarena_text:non_english=Gemini 3.6 Flash (High),True,False,False
+2026-10-31,translate,moonshotai/kimi-k3,Mid,0.5498,1.0000,14.8200,12.4807,lmarena_text:non_english=Kimi K3 (Max),True,False,False
+2026-10-31,translate,z-ai/glm-5.3-flash,Cheap,0.5463,1.0000,0.2620,0.2164,lmarena_text:non_english=GLM-5.3-Flash,False,True,False
+2026-10-31,translate,openai/gpt-5.5,Mid,0.5409,1.0000,18.5000,15.9350,lmarena_text:non_english=GPT-5.5,False,False,False
+2026-10-31,translate,z-ai/glm-5.3,Cheap,0.5408,1.0000,2.7000,2.3010,lmarena_text:non_english=GLM-5.3 (Max),True,False,False
+2026-10-31,translate,google/gemini-3-flash-preview,Cheap,0.5388,1.0000,1.8500,1.8500,lmarena_text:non_english=Gemini 3 Flash,False,False,False
+2026-10-31,translate,anthropic/claude-sonnet-5.5,Mid,0.5358,1.0000,6.5000,5.4320,lmarena_text:non_english=Claude Sonnet 5.5 (xHigh),True,False,False
+2026-10-31,translate,openai/gpt-5.6-sol,Mid,0.5275,1.0000,13.0000,10.9780,lmarena_text:non_english=GPT-5.6 Sol (xHigh),True,False,False
+2026-10-31,translate,deepseek/deepseek-v4.1-flash,Cheap,0.5269,1.0000,0.2350,0.1826,lmarena_text:non_english=DeepSeek-V4.1-Flash-20260910 (Max),True,True,False
+2026-10-31,translate,openai/gpt-5.4,Mid,0.5242,1.0000,9.2500,7.9675,lmarena_text:non_english=GPT-5.4,False,False,False
+2026-10-31,translate,qwen/qwen3.7-plus,Cheap,0.5194,1.0000,1.2880,1.2880,lmarena_text:non_english=Qwen3.7-Plus,False,False,False
+2026-10-31,translate,anthropic/claude-opus-4.8,Mid,0.5190,1.0000,16.2500,13.7225,lmarena_text:non_english=Claude Opus 4.8,False,False,False
+2026-10-31,translate,openai/gpt-5.6-terra,Mid,0.5141,1.0000,7.4000,6.3740,lmarena_text:non_english=GPT-5.6 Terra (xHigh),True,False,False
+2026-10-31,translate,anthropic/claude-sonnet-4.6,Mid,0.5123,1.0000,9.7500,8.2335,lmarena_text:non_english=Claude Sonnet 4.6,False,False,False
+2026-10-31,translate,anthropic/claude-opus-4.5,Mid,0.5091,1.0000,16.2500,13.7225,lmarena_text:non_english=Claude Opus 4.5 (20251101),False,False,False
+2026-10-31,translate,openai/gpt-6.1-sol,Mid,0.5062,1.0000,6.5000,5.4320,lmarena_text:non_english=GPT-6.1 Sol (Max),True,False,False
+2026-10-31,translate,openai/gpt-6-astra,Expensive,0.5006,1.0000,32.5000,27.4450,lmarena_text:non_english=GPT-6 Astra (Max),True,False,False
+2026-10-31,translate,anthropic/claude-sonnet-5,Mid,0.4999,1.0000,6.5000,5.4890,lmarena_text:non_english=Claude Sonnet 5 (High),True,False,False
+2026-10-31,translate,google/gemini-3.5-flash-lite,Cheap,0.4946,1.0000,1.4250,1.2711,lmarena_text:non_english=Gemini 3.5 Flash-Lite,False,False,False
+2026-10-31,translate,anthropic/claude-sonnet-4.5,Mid,0.4910,1.0000,9.7500,8.2335,lmarena_text:non_english=Claude Sonnet 4.5 (20250929),False,False,False
+2026-10-31,translate,openai/gpt-5.6-luna,Cheap,0.4797,1.0000,0.7400,0.6374,lmarena_text:non_english=GPT-5.6 Luna (xHigh),True,False,False
+2026-10-31,translate,openai/gpt-5.1,Mid,0.4736,1.0000,5.7500,5.1087,lmarena_text:non_english=GPT-5.1,False,False,False
+2026-10-31,translate,google/gemini-3.1-flash-lite,Cheap,0.4701,1.0000,0.9250,0.7968,lmarena_text:non_english=Gemini 3.1 Flash-Lite Preview,False,False,False
+2026-10-31,translate,anthropic/claude-opus-4.1,Expensive,0.4629,1.0000,48.7500,41.1675,lmarena_text:non_english=Claude Opus 4.1 (20250805),False,False,False
+2026-10-31,translate,openai/gpt-5.2,Mid,0.4628,1.0000,8.0500,7.1522,lmarena_text:non_english=GPT-5.2,False,False,False
+2026-10-31,translate,openai/gpt-5.4-mini,Cheap,0.4622,1.0000,2.7750,2.3902,lmarena_text:non_english=GPT-5.4 mini (High),True,False,False
+2026-10-31,translate,mistralai/mistral-medium-3-5,Mid,0.4617,1.0000,4.8750,4.8750,lmarena_text:non_english=Mistral Medium 3.5,True,False,False
+2026-10-31,translate,openai/o3,Mid,0.4569,1.0000,5.6000,4.7450,lmarena_text:non_english=o3 (2025-04-16),False,False,False
+2026-10-31,translate,openai/gpt-5,Mid,0.4509,1.0000,5.7500,5.1087,lmarena_text:non_english=GPT-5 (High),True,False,False
+2026-10-31,translate,openai/gpt-6-sol,Mid,0.4383,1.0000,6.5000,5.4890,lmarena_text:non_english=GPT-6 Sol (Max),True,False,False
+2026-10-31,translate,anthropic/claude-haiku-5.5,Cheap,0.4373,1.0000,0.3250,0.2744,lmarena_text:non_english=Claude Haiku 5.5 (High),True,False,False
+2026-10-31,translate,x-ai/grok-4.3,Cheap,0.4344,1.0000,3.8000,2.8424,lmarena_text:non_english=Grok 4.3,False,False,False
+2026-10-31,translate,openai/gpt-6-luna,Cheap,0.4268,1.0000,0.3250,0.2744,lmarena_text:non_english=GPT-6 Luna (Max),True,False,False
+2026-10-31,translate,anthropic/claude-haiku-4.5,Cheap,0.4224,1.0000,3.2500,2.7445,lmarena_text:non_english=Claude Haiku 4.5 (20251001),False,False,False
+2026-10-31,translate,openai/gpt-4.1,Mid,0.4124,1.0000,5.6000,4.7450,lmarena_text:non_english=GPT-4.1 (2025-04-14),False,False,False
+2026-10-31,translate,openai/gpt-5-mini,Cheap,0.4023,1.0000,1.1500,1.0218,lmarena_text:non_english=GPT-5 mini (High),True,False,False
+2026-10-31,translate,openai/gpt-5.4-nano,Cheap,0.3981,1.0000,0.7625,0.6599,lmarena_text:non_english=GPT-5.4 nano (High),True,False,False
+2026-10-31,translate,openai/gpt-oss-120b,Cheap,0.3858,1.0000,0.1816,0.1816,lmarena_text:non_english=gpt-oss-120b,False,True,False
+2026-10-31,translate,openai/o4-mini,Cheap,0.3669,1.0000,3.0800,2.6098,lmarena_text:non_english=o4-mini (2025-04-16),False,False,False
+2026-10-31,translate,openai/gpt-4.1-mini,Cheap,0.3423,1.0000,1.1200,0.9490,lmarena_text:non_english=GPT-4.1 mini (2025-04-14),False,False,False
+2026-10-31,translate,openai/gpt-5-nano,Cheap,0.3357,1.0000,0.2300,0.2044,lmarena_text:non_english=GPT-5 nano (High),True,False,False
+2026-10-31,translate,openai/o3-mini,Cheap,0.3191,1.0000,3.0800,2.7665,lmarena_text:non_english=o3-mini,False,False,False
+2026-10-31,translate,openai/gpt-4o,Mid,0.2984,1.0000,7.0000,6.2875,lmarena_text:non_english=GPT-4o (2024-05-13),False,False,False
+2026-10-31,translate,openai/gpt-oss-20b,Cheap,0.2815,1.0000,0.1488,0.1488,lmarena_text:non_english=gpt-oss-20b,False,True,False
+2026-10-31,translate,openai/gpt-4o-mini,Cheap,0.2788,1.0000,0.4200,0.3772,lmarena_text:non_english=GPT-4o mini (2024-07-18),False,False,False
+2026-10-31,translate,openai/gpt-4.1-nano,Cheap,0.2717,1.0000,0.2800,0.2372,lmarena_text:non_english=GPT-4.1 nano (2025-04-14),False,False,False
+2026-10-31,translate,openai/gpt-4-turbo,Mid,0.2550,1.0000,23.5000,23.5000,lmarena_text:non_english=GPT-4 Turbo (2024-04-09),False,False,False
+2026-10-31,translate,openai/gpt-6-luna-pro,Cheap,,0.0000,0.3250,0.2744,,False,False,False
+2026-10-31,translate,openai/gpt-5.6-luna-pro,Cheap,,0.0000,0.7400,0.6374,,False,False,False
+2026-10-31,translate,openai/gpt-6.1-terra,Cheap,,0.0000,3.2500,2.7160,,False,False,False
+2026-10-31,translate,openai/gpt-6.1-terra-pro,Cheap,,0.0000,3.2500,2.7160,,False,False,False
+2026-10-31,translate,openai/gpt-6-sol-pro,Mid,,0.0000,6.5000,5.4890,,False,False,False
+2026-10-31,translate,openai/gpt-6.1-sol-pro,Mid,,0.0000,6.5000,5.4320,,False,False,False
+2026-10-31,translate,openai/gpt-5.6-terra-pro,Mid,,0.0000,7.4000,6.3740,,False,False,False
+2026-10-31,translate,openai/gpt-5.6-sol-pro,Mid,,0.0000,13.0000,10.9780,,False,False,False
+2026-10-31,translate,openai/gpt-6-astra-pro,Expensive,,0.0000,32.5000,27.4450,,False,False,False
+2026-10-31,translate,openai/gpt-5-pro,Expensive,,0.0000,69.0000,69.0000,,False,False,False
+2026-10-31,translate,openai/gpt-5.2-pro,Expensive,,0.0000,96.6000,96.6000,,False,False,False
+2026-10-31,translate,openai/gpt-5.4-pro,Expensive,,0.0000,111.0000,111.0000,,False,False,False
+2026-10-31,translate,openai/gpt-5.5-pro,Expensive,,0.0000,111.0000,111.0000,,False,False,False
