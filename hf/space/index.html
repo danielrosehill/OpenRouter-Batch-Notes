@@ -77,6 +77,7 @@ code { font-size: 12px; }
       <div class="checks" id="tierchecks"></div>
     </div>
     <label class="ctl">Provider<select id="prov"><option value="">All</option></select></label>
+    <label class="ctl">Endpoint<select id="stab"><option value="">All</option><option value="stable">Stable versions only</option><option value="unstable">Aliases only</option></select></label>
   </div>
 
   <div class="tiles" id="tiles"></div>
@@ -91,6 +92,7 @@ code { font-size: 12px; }
   <div id="scatter" class="chart"></div>
 
   <h2>Table</h2>
+  <p class="note"><b>Stable</b> = the id always resolves to one model version. OpenRouter's <code>-latest</code> aliases have no batch ids. GPT-4o, GPT-4o mini and GPT-4 Turbo are marked No: their slugs carry no date, so OpenAI can repoint them. Hover the cell for the reason. Columns are documented in the dataset's data dictionary.</p>
   <div class="tablebox"><table id="tbl"><thead></thead><tbody></tbody></table></div>
   <p class="note">Prices change often: re-check on <a href="https://openrouter.ai/models">openrouter.ai</a> before relying on them. Rubric and method: <a href="https://github.com/danielrosehill/OpenRouter-Batch-Notes/blob/main/notebook/07-price-tiers.md">OpenRouter-Batch-Notes, entry 07</a>.</p>
 </div></div>
@@ -102,7 +104,7 @@ const BANDS = [["1a","Cheap","≤ $1 out"],["1b","Cheap","$1–3 out"],["2a","Mi
 const css = n => getComputedStyle(document.querySelector(".viz-root")).getPropertyValue(n).trim();
 const tierColor = t => css("--tier-" + (TIERS.indexOf(t) + 1));
 const fmt$ = v => v >= 100 ? "$" + v.toFixed(0) : v >= 10 ? "$" + v.toFixed(1) : "$" + v.toFixed(2);
-const state = { rows: [], tiers: new Set(TIERS), prov: "", sort: ["job", 1] };
+const state = { rows: [], tiers: new Set(TIERS), prov: "", stab: "", sort: ["job", 1] };
 
 function parseCSV(text) {
   const out = []; let row = [], f = "", q = false;
@@ -134,7 +136,7 @@ async function load(path) {
     bin: +r.batch_input_usd_per_m, bout: +r.batch_output_usd_per_m,
     sin: r.sync_input_usd_per_m === "" ? null : +r.sync_input_usd_per_m,
     sout: r.sync_output_usd_per_m === "" ? null : +r.sync_output_usd_per_m,
-    mismatch: r.input_mismatch === "True", provs: r.batch_providers.split(";") }));
+    mismatch: r.input_mismatch === "True", stable: r.stable_endpoint !== "False", provs: r.batch_providers.split(";") }));
   const provs = [...new Set(state.rows.flatMap(r => r.provs))].sort();
   const sel = document.getElementById("prov");
   sel.innerHTML = '<option value="">All</option>' + provs.map(p => `<option>${p}</option>`).join("");
@@ -146,7 +148,7 @@ async function load(path) {
 function visible() {
   const ti = +document.getElementById("tin").value || 0, to = +document.getElementById("tout").value || 0;
   return state.rows
-    .filter(r => state.tiers.has(r.tier) && (!state.prov || r.provs.includes(state.prov)))
+    .filter(r => state.tiers.has(r.tier) && (!state.prov || r.provs.includes(state.prov)) && (!state.stab || (state.stab === "stable") === r.stable))
     .map(r => ({ ...r, job: r.bin * ti + r.bout * to }));
 }
 
@@ -181,8 +183,8 @@ function render() {
       marker: { color: tierColor(t), line: { width: 0 }, cornerradius: 4 },
       text: g.map(r => fmt$(r.job)), textposition: "outside", cliponaxis: false,
       textfont: { color: css("--text-secondary"), size: 11 },
-      customdata: g.map(r => [r.bin, r.bout, r.sub_band, r.batch_providers.replace(/;/g, ", "), r.sin == null ? "n/a" : `${r.sin} / ${r.sout}`]),
-      hovertemplate: "<b>%{y}</b><br>Job (" + job + "): %{x:$,.2f}<br>Batch in / out: $%{customdata[0]} / $%{customdata[1]} per M<br>Sync in / out: %{customdata[4]}<br>Band %{customdata[2]} · %{customdata[3]}<extra></extra>" };
+      customdata: g.map(r => [r.bin, r.bout, r.sub_band, r.batch_providers.replace(/;/g, ", "), r.sin == null ? "n/a" : `${r.sin} / ${r.sout}`, r.stable ? "stable version" : "alias, can be repointed"]),
+      hovertemplate: "<b>%{y}</b><br>Job (" + job + "): %{x:$,.2f}<br>Batch in / out: $%{customdata[0]} / $%{customdata[1]} per M<br>Sync in / out: %{customdata[4]}<br>Band %{customdata[2]} · %{customdata[3]}<br>Endpoint: %{customdata[5]}<extra></extra>" };
   });
   Plotly.react("bars", barTraces, { ...baseLayout(), height: Math.max(260, 18 * sorted.length + 90), bargap: 0.25,
     margin: { l: 230, r: 60, t: 40, b: 40 },
@@ -212,13 +214,13 @@ function render() {
   }, { displayModeBar: false, responsive: true });
 
   // table
-  const cols = [["model","Model"],["tier","Tier"],["sub_band","Band"],["bin","Batch in"],["bout","Batch out"],["out_in_ratio","Out÷in"],["input_band","Input band"],["sin","Sync in"],["sout","Sync out"],["job","Job"],["batch_providers","Providers"]];
+  const cols = [["model","Model"],["tier","Tier"],["sub_band","Band"],["bin","Batch in"],["bout","Batch out"],["out_in_ratio","Out÷in"],["input_band","Input band"],["sin","Sync in"],["sout","Sync out"],["job","Job"],["stable","Stable"],["batch_providers","Providers"]];
   const [k, dir] = state.sort;
   const trs = [...rows].sort((a, b) => { const x = a[k], y = b[k]; return (typeof x === "number" || x == null ? (x ?? -1) - (y ?? -1) : String(x).localeCompare(y)) * dir; });
   const thead = document.querySelector("#tbl thead");
   thead.innerHTML = "<tr>" + cols.map(([c, l]) => `<th data-k="${c}" scope="col">${l}${c === k ? (dir > 0 ? " ▲" : " ▼") : ""}</th>`).join("") + "</tr>";
   thead.querySelectorAll("th").forEach(th => th.onclick = () => { state.sort = [th.dataset.k, state.sort[0] === th.dataset.k ? -state.sort[1] : 1]; render(); });
-  document.querySelector("#tbl tbody").innerHTML = trs.map(r => `<tr><td><code>${r.model}</code></td><td><span class="swatch" style="background:${tierColor(r.tier)}"></span>${r.tier}</td><td>${r.sub_band}</td><td>${r.bin}</td><td>${r.bout}</td><td>${r.out_in_ratio}</td><td${r.mismatch ? ' class="flag"' : ""}>${r.input_band}</td><td>${r.sin ?? "n/a"}</td><td>${r.sout ?? "n/a"}</td><td>${fmt$(r.job)}</td><td style="text-align:left">${r.batch_providers.replace(/;/g, ", ")}</td></tr>`).join("");
+  document.querySelector("#tbl tbody").innerHTML = trs.map(r => `<tr><td><code>${r.model}</code></td><td><span class="swatch" style="background:${tierColor(r.tier)}"></span>${r.tier}</td><td>${r.sub_band}</td><td>${r.bin}</td><td>${r.bout}</td><td>${r.out_in_ratio}</td><td${r.mismatch ? ' class="flag"' : ""}>${r.input_band}</td><td>${r.sin ?? "n/a"}</td><td>${r.sout ?? "n/a"}</td><td>${fmt$(r.job)}</td><td title="${r.stability_basis || ""}">${r.stable ? "Yes" : "<b>No</b>"}</td><td style="text-align:left">${r.batch_providers.replace(/;/g, ", ")}</td></tr>`).join("");
 }
 
 function setup() {
@@ -228,6 +230,7 @@ function setup() {
   pbtn.forEach(b => b.onclick = () => { document.getElementById("tin").value = b.dataset.i; document.getElementById("tout").value = b.dataset.o; pbtn.forEach(x => x.setAttribute("aria-pressed", x === b)); render(); });
   ["tin", "tout"].forEach(id => document.getElementById(id).oninput = () => { pbtn.forEach(x => x.setAttribute("aria-pressed", false)); render(); });
   document.getElementById("prov").onchange = e => { state.prov = e.target.value; render(); };
+  document.getElementById("stab").onchange = e => { state.stab = e.target.value; render(); };
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { setup(); render(); });
 }
 

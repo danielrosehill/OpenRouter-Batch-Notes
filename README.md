@@ -33,13 +33,15 @@ Dated copies of OpenRouter material in [`reference/`](reference/README.md), fetc
 
 - Dataset (public): [danielrosehill/OR-Batch-Inference-Models](https://huggingface.co/datasets/danielrosehill/OR-Batch-Inference-Models). One CSV per snapshot in `data/`, split `snapshot_YYYY_MM_DD`: the batch-models snapshot plus the tier columns from entry 07. Source: `hf/dataset/`.
 - Space (public, static): [danielrosehill/OR-Batch-Inference-Costs](https://huggingface.co/spaces/danielrosehill/OR-Batch-Inference-Costs). Prices a job you set (input and output tokens) on every model, by tier. Reads the dataset in the browser and lists `data/*.csv` through the Hub API, so a new snapshot needs no Space change. Source: `hf/space/`.
-- To add a snapshot: write `hf/dataset/data/batch_models_<date>.csv` with the same columns, add a split for it to the `configs` block in `hf/dataset/README.md`, then `with-secrets bash -c 'export HF_TOKEN; hf upload danielrosehill/OR-Batch-Inference-Models hf/dataset . --repo-type dataset'`.
+- Columns are documented in `hf/dataset/data_dictionary.json` (each tagged `api` or `enriched`). `stable_endpoint` marks ids that resolve to one fixed model version: on 2026-10-31 none of OpenRouter's 20 dynamic `-latest` aliases had a `:batch` id, and only `openai/gpt-4o`, `gpt-4o-mini` and `gpt-4-turbo` (undated `canonical_slug`) were labelled unstable.
+- To add a snapshot: save the batch-models CSV, run `scripts/price_tiers.py`, save the full API records as `reference/batch-models/<date>_api-records.json`, then `python3 -I scripts/build_hf_dataset.py <date> .` writes `hf/dataset/data/batch_models_<date>.csv`; add a split for it to the `configs` block in `hf/dataset/README.md`, then `with-secrets bash -c 'export HF_TOKEN; hf upload danielrosehill/OR-Batch-Inference-Models hf/dataset . --repo-type dataset'`.
 
 ## Scripts
 
 - [`scripts/or_batch_prices.py`](scripts/or_batch_prices.py): pulls the public
   `/api/v1/models` endpoint (no key needed) and prints every `:batch` id with its batch and sync
   price per million tokens, sorted cheapest first. Run with `python3 scripts/or_batch_prices.py`.
+- [`scripts/build_hf_dataset.py`](scripts/build_hf_dataset.py): joins a snapshot's prices, tiers and API records into the HF dataset CSV and adds the `stable_endpoint` label (rule in the docstring). Checks columns against `hf/dataset/data_dictionary.json`.
 - [`scripts/price_tiers.py`](scripts/price_tiers.py): assigns each model in a batch-models CSV
   snapshot to a price tier (rubric in entry 07) and writes `<prefix>.csv` and `<prefix>.md`.
   Run with `python3 -I scripts/price_tiers.py <snapshot.csv> <out-prefix>`.
