@@ -20,6 +20,7 @@ bulk labelling and generation jobs.
 | 04 | [Provider routing](notebook/04-provider-routing.md) | Unpinned batches go to whichever host is cheapest; `provider.only` |
 | 05 | [When to use batch](notebook/05-when-to-use-batch.md) | Decision rules distilled from the above |
 | 06 | [Open questions](notebook/06-open-questions.md) | Things not yet verified |
+| 07 | [Price tiers](notebook/07-price-tiers.md) | Rubric sorting the 2026-10-31 batch models into cheap / mid / expensive by output price, with input-side exceptions |
 
 ## Reference snapshots
 
@@ -33,6 +34,9 @@ Dated copies of OpenRouter material in [`reference/`](reference/README.md), fetc
 - [`scripts/or_batch_prices.py`](scripts/or_batch_prices.py): pulls the public
   `/api/v1/models` endpoint (no key needed) and prints every `:batch` id with its batch and sync
   price per million tokens, sorted cheapest first. Run with `python3 scripts/or_batch_prices.py`.
+- [`scripts/price_tiers.py`](scripts/price_tiers.py): assigns each model in a batch-models CSV
+  snapshot to a price tier (rubric in entry 07) and writes `<prefix>.csv` and `<prefix>.md`.
+  Run with `python3 -I scripts/price_tiers.py <snapshot.csv> <out-prefix>`.
 
 ## Notation
 
