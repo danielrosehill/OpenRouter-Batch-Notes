@@ -21,6 +21,13 @@ bulk labelling and generation jobs.
 | 05 | [When to use batch](notebook/05-when-to-use-batch.md) | Decision rules distilled from the above |
 | 06 | [Open questions](notebook/06-open-questions.md) | Things not yet verified |
 
+## Reference snapshots
+
+Dated copies of OpenRouter material in [`reference/`](reference/README.md), fetched 2026-10-31:
+
+- Batch API docs, verbatim: [quickstart](reference/docs/2026-10-31_batch-quickstart.md) and [feature guide](reference/docs/2026-10-31_batch-api-feature-guide.md).
+- [Models that support batch](reference/batch-models/2026-10-31_batch-models.md) ([JSON](reference/batch-models/2026-10-31_batch-models.json)): 71 `:batch` ids with prices and batch providers.
+
 ## Scripts
 
 - [`scripts/or_batch_prices.py`](scripts/or_batch_prices.py): pulls the public
