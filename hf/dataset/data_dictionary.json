@@ -29,6 +29,8 @@
     {"name": "out_in_ratio", "type": "number", "origin": "enriched", "description": "batch_output_usd_per_m / batch_input_usd_per_m, 1 decimal."},
     {"name": "reference_job_usd", "type": "number", "origin": "enriched", "description": "Cost in US$ of 4.5M input + 0.5M output tokens at batch prices (bulk-labelling job shape, 9:1)."},
     {"name": "stable_endpoint", "type": "boolean", "origin": "enriched", "description": "True if the id resolves to one fixed model version. False for dynamic aliases (`~` prefix or `latest` in the id, which OpenRouter says 'always redirects to the latest model') and for closed models whose canonical_slug has no date stamp (an upstream alias the provider can repoint). Rule: scripts/build_hf_dataset.py."},
-    {"name": "stability_basis", "type": "string", "origin": "enriched", "description": "Which branch of the stable_endpoint rule applied."}
+    {"name": "stability_basis", "type": "string", "origin": "enriched", "description": "Which branch of the stable_endpoint rule applied."},
+    {"name": "offers_cache_pricing", "type": "boolean", "origin": "enriched", "description": "True when the batch id's API record publishes a prompt-cache read price (`pricing.input_cache_read`). False means no cache price is listed, not proof the provider never caches."},
+    {"name": "cache_pricing", "type": "string (JSON)|null", "origin": "api", "description": "Cache prices from `pricing`, US$ per million tokens, as compact JSON: `read_usd_per_m` (`input_cache_read`), `write_usd_per_m` (`input_cache_write`, null when not published: usually automatic caching with no write premium), and `long_context` {`min_prompt_tokens`, `read_usd_per_m`, `write_usd_per_m`} when a long-context override lists cache prices. Empty when offers_cache_pricing is False."}
   ]
 }

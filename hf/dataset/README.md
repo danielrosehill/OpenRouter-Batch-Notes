@@ -65,6 +65,8 @@ Machine-readable copy: [`data_dictionary.json`](data_dictionary.json). **Origin*
 | `reference_job_usd` | enriched | number | Cost in US$ of 4.5M input + 0.5M output tokens at batch prices (bulk-labelling job shape, 9:1). |
 | `stable_endpoint` | enriched | boolean | True if the id resolves to one fixed model version. False for dynamic aliases (`~` prefix or `latest` in the id, which OpenRouter says 'always redirects to the latest model') and for closed models whose canonical_slug has no date stamp (an upstream alias the provider can repoint). Rule: scripts/build_hf_dataset.py. |
 | `stability_basis` | enriched | string | Which branch of the stable_endpoint rule applied. |
+| `offers_cache_pricing` | enriched | boolean | True when the batch id's API record publishes a prompt-cache read price (`pricing.input_cache_read`). False means no cache price is listed, not proof the provider never caches. |
+| `cache_pricing` | api | string (JSON) or null | Cache prices from `pricing`, US$ per million tokens, as compact JSON: `read_usd_per_m` (`input_cache_read`), `write_usd_per_m` (`input_cache_write`, null when not published: usually automatic caching with no write premium), and `long_context` {`min_prompt_tokens`, `read_usd_per_m`, `write_usd_per_m`} when a long-context override lists cache prices. Empty when offers_cache_pricing is False. |
 
 Tier boundaries sit in the widest gaps of the 2026-10-31 output-price ladder
 (2.50 → 3.75, 7.50 → 10, 15 → 25, 37.50 → 60).
@@ -80,5 +82,17 @@ date, so they map to OpenAI's undated names, which OpenAI can repoint to a newer
 did so for `gpt-4o` in 2024). That they are aliases is inferred from the undated slug. OpenRouter
 does not state it. The other 68 have a dated `canonical_slug` (66) or are open weights with a fixed
 Hugging Face repo (2, gpt-oss).
+
+## Prompt caching
+
+On 2026-10-31, 60 of 71 batch ids publish a cache read price (`offers_cache_pricing`). Read
+price as a share of batch input price: 0.025× (Fable 5.1), 0.05× (Opus/Sonnet 5.5, GPT-6.1,
+Gemini 4 Argon, GPT-6.1 Sol), 0.10× (most models), 0.16–0.25× (Grok 4.3, GLM, o3/o4-mini,
+GPT-4.1) and 0.50× (GPT-4o, o3-mini). A write price is published for 31: 1.25× input for
+Anthropic (15) and OpenAI GPT-5.6 Sol, GPT-6 and GPT-6.1 (12), 0.11–0.19× for Gemini 3.6–4 (4). The other 29 list no
+write price (automatic caching, no write premium). No cache price: gpt-oss-20b/120b, Qwen 3.7
+Plus, Mistral Medium 3.5, Gemini 3 Flash / 3.1 Pro preview, GPT-4 Turbo and the GPT-5 / 5.2 /
+5.4 / 5.5 Pro models. OpenRouter's batch guide says only that "prompt caching rates vary by
+model"; whether requests inside one batch actually hit each other's cache is not confirmed.
 
 *Compiled by Claude Opus 5.5 for Daniel Rosehill, 2026-10-31.*

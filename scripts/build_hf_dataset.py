@@ -16,6 +16,12 @@ Stability rule (enriched, written 2026-10-31):
                     repointed to a new snapshot (e.g. OpenAI's gpt-4o).
   stable_endpoint = True otherwise: dated canonical_slug, or open weights with a fixed HF repo.
 
+Cache pricing (enriched, written 2026-10-31):
+  offers_cache_pricing = True when the record has pricing.input_cache_read.
+  cache_pricing        = compact JSON of the API cache prices in US$/M, base tier plus any
+                         long-context override that carries cache prices; "" when none.
+                         write_usd_per_m is null when no input_cache_write is published.
+
 Usage: python3 -I build_hf_dataset.py <date> <repo-root>
 Writes <repo-root>/hf/dataset/data/batch_models_<date>.csv. Written by Claude Opus 5.5, 2026-10-31.
 """
@@ -40,6 +46,23 @@ def stability(base_id, rec):
     return False, "undated canonical_slug, closed weights: provider alias that can be repointed"
 
 
+def per_m(v):
+    return None if v in (None, "") else round(float(v) * 1e6, 6)
+
+
+def cache(rec):
+    p = rec.get("pricing") or {}
+    if not p.get("input_cache_read"):
+        return False, ""
+    obj = {"read_usd_per_m": per_m(p["input_cache_read"]), "write_usd_per_m": per_m(p.get("input_cache_write"))}
+    for o in p.get("overrides") or []:
+        if o.get("input_cache_read"):
+            obj["long_context"] = {"min_prompt_tokens": o.get("min_prompt_tokens"),
+                                   "read_usd_per_m": per_m(o["input_cache_read"]),
+                                   "write_usd_per_m": per_m(o.get("input_cache_write"))}
+    return True, json.dumps(obj, separators=(",", ":"))
+
+
 def main(date, root):
     root = Path(root)
     ref = root / "reference" / "batch-models"
@@ -54,6 +77,7 @@ def main(date, root):
     for r in snap:
         t, rec = tiers[r["model"]], recs[r["model"]]
         stable, basis = stability(r["model"], rec)
+        has_cache, cache_json = cache(rec)
         rows.append({
             "snapshot_date": date, **r,
             "canonical_slug": rec.get("canonical_slug") or "",
@@ -63,6 +87,7 @@ def main(date, root):
             "input_band": t["input_band"], "input_mismatch": t["input_mismatch"],
             "out_in_ratio": t["out_in_ratio"], "reference_job_usd": t["job_usd"],
             "stable_endpoint": stable, "stability_basis": basis,
+            "offers_cache_pricing": has_cache, "cache_pricing": cache_json,
         })
     if list(rows[0]) != columns:
         sys.exit(f"columns differ from data_dictionary.json:\n built {list(rows[0])}\n dict  {columns}")
