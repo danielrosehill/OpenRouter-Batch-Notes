@@ -1,0 +1,310 @@
+{
+ "anthropic/claude-haiku-5.5": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0061,
+   "distinct2": 0.7322,
+   "items": 75,
+   "dup_rate": 0.0,
+   "nn_sim": 0.1525,
+   "top3_share": 0.2267,
+   "top3": [
+    "car",
+    "man",
+    "store"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0641,
+   "distinct2": 0.5916,
+   "opening_rep": 0.7
+  },
+  "cost_usd": 0.00278,
+  "served": [
+   "anthropic/claude-haiku-5.5"
+  ],
+  "errors": 0,
+  "reasoning": "off"
+ },
+ "anthropic/claude-sonnet-5.5": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0009,
+   "distinct2": 0.8078,
+   "items": 75,
+   "dup_rate": 0.0,
+   "nn_sim": 0.1587,
+   "top3_share": 0.36,
+   "top3": [
+    "kitchen",
+    "man",
+    "woman"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.1621,
+   "distinct2": 0.4688,
+   "opening_rep": 1.0
+  },
+  "cost_usd": 0.0608,
+  "served": [
+   "anthropic/claude-sonnet-5.5"
+  ],
+  "errors": 0,
+  "reasoning": "low"
+ },
+ "openai/gpt-6-luna": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0025,
+   "distinct2": 0.7083,
+   "items": 75,
+   "dup_rate": 0.0,
+   "nn_sim": 0.2097,
+   "top3_share": 0.56,
+   "top3": [
+    "adds",
+    "checking",
+    "records"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.061,
+   "distinct2": 0.6268,
+   "opening_rep": 0.8
+  },
+  "cost_usd": 0.00147,
+  "served": [
+   "openai/gpt-6-luna"
+  ],
+  "errors": 0,
+  "reasoning": "off"
+ },
+ "openai/gpt-5.6-luna": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0017,
+   "distinct2": 0.7163,
+   "items": 75,
+   "dup_rate": 0.0267,
+   "nn_sim": 0.2105,
+   "top3_share": 0.5733,
+   "top3": [
+    "records",
+    "store",
+    "supplies"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0854,
+   "distinct2": 0.5323,
+   "opening_rep": 1.0
+  },
+  "cost_usd": 0.00348,
+  "served": [
+   "openai/gpt-5.6-luna"
+  ],
+  "errors": 0,
+  "reasoning": "off"
+ },
+ "google/gemini-3.8-flash": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0012,
+   "distinct2": 0.8226,
+   "items": 75,
+   "dup_rate": 0.0267,
+   "nn_sim": 0.1502,
+   "top3_share": 0.32,
+   "top3": [
+    "room",
+    "snacks",
+    "supplies"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0342,
+   "distinct2": 0.6799,
+   "opening_rep": 0.6
+  },
+  "cost_usd": 0.01495,
+  "served": [
+   "google/gemini-3.8-flash"
+  ],
+  "errors": 0,
+  "reasoning": "off"
+ },
+ "google/gemini-3.1-flash-lite": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0202,
+   "distinct2": 0.6837,
+   "items": 75,
+   "dup_rate": 0.0,
+   "nn_sim": 0.1533,
+   "top3_share": 0.4133,
+   "top3": [
+    "kitchen",
+    "standing",
+    "supplies"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0415,
+   "distinct2": 0.6483,
+   "opening_rep": 0.7
+  },
+  "cost_usd": 0.00805,
+  "served": [
+   "google/gemini-3.1-flash-lite"
+  ],
+  "errors": 0,
+  "reasoning": "off"
+ },
+ "deepseek/deepseek-v4.1-flash": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0021,
+   "distinct2": 0.7612,
+   "items": 75,
+   "dup_rate": 0.0,
+   "nn_sim": 0.1315,
+   "top3_share": 0.3733,
+   "top3": [
+    "grocery",
+    "home",
+    "supplies"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0569,
+   "distinct2": 0.5709,
+   "opening_rep": 0.8
+  },
+  "cost_usd": 0.00165,
+  "served": [
+   "deepseek/deepseek-v4.1-flash"
+  ],
+  "errors": 0,
+  "reasoning": "off"
+ },
+ "z-ai/glm-5.3-flash": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0054,
+   "distinct2": 0.7154,
+   "items": 75,
+   "dup_rate": 0.0533,
+   "nn_sim": 0.1593,
+   "top3_share": 0.4667,
+   "top3": [
+    "between",
+    "man",
+    "supplies"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0648,
+   "distinct2": 0.5813,
+   "opening_rep": 1.0
+  },
+  "cost_usd": 0.00064,
+  "served": [
+   "z-ai/glm-5.3-flash"
+  ],
+  "errors": 0,
+  "reasoning": "low"
+ },
+ "z-ai/glm-5.3": {
+  "scenarios": {
+   "n": 50,
+   "jaccard3": 0.004,
+   "distinct2": 0.8009,
+   "items": 50,
+   "dup_rate": 0.0,
+   "nn_sim": 0.1109,
+   "top3_share": 0.38,
+   "top3": [
+    "assistant",
+    "between",
+    "grocery"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0411,
+   "distinct2": 0.6286,
+   "opening_rep": 0.3
+  },
+  "cost_usd": 0.00819,
+  "served": [
+   "z-ai/glm-5.3"
+  ],
+  "errors": 0,
+  "reasoning": "low"
+ },
+ "openai/gpt-oss-120b": {
+  "scenarios": {
+   "n": 77,
+   "jaccard3": 0.0081,
+   "distinct2": 0.6576,
+   "items": 77,
+   "dup_rate": 0.0,
+   "nn_sim": 0.1918,
+   "top3_share": 0.6104,
+   "top3": [
+    "grocery",
+    "new",
+    "records"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0671,
+   "distinct2": 0.5625,
+   "opening_rep": 0.0
+  },
+  "cost_usd": 0.00089,
+  "served": [
+   "openai/gpt-oss-120b"
+  ],
+  "errors": 0,
+  "reasoning": "low"
+ },
+ "qwen/qwen3.7-plus": {
+  "scenarios": {
+   "n": 75,
+   "jaccard3": 0.0014,
+   "distinct2": 0.8162,
+   "items": 75,
+   "dup_rate": 0.0533,
+   "nn_sim": 0.2071,
+   "top3_share": 0.28,
+   "top3": [
+    "add",
+    "adds",
+    "student"
+   ]
+  },
+  "dictation": {
+   "n": 10,
+   "jaccard3": 0.0713,
+   "distinct2": 0.5696,
+   "opening_rep": 0.9
+  },
+  "cost_usd": 0.00435,
+  "served": [
+   "qwen/qwen3.7-plus"
+  ],
+  "errors": 0,
+  "reasoning": "off"
+ }
+}

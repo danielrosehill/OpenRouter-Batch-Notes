@@ -22,6 +22,7 @@ bulk labelling and generation jobs.
 | 06 | [Open questions](notebook/06-open-questions.md) | Things not yet verified |
 | 07 | [Price tiers](notebook/07-price-tiers.md) | Rubric sorting the 2026-10-31 batch models into cheap / mid / expensive by output price, with input-side exceptions |
 | 08 | [Workload profiles](notebook/08-workload-profiles.md) | Input:output and cache weightings for eight common batch jobs, costed per model with and without caching |
+| 09 | [Synthetic data diversity](notebook/09-synthetic-data-diversity.md) | Own probe of 11 batch models plus EQ-Bench: variety comes from seeding, which models repeat themselves, which require reasoning |
 
 ## Reference snapshots
 
@@ -43,6 +44,7 @@ Dated copies of OpenRouter material in [`reference/`](reference/README.md), fetc
   `/api/v1/models` endpoint (no key needed) and prints every `:batch` id with its batch and sync
   price per million tokens, sorted cheapest first. Run with `python3 scripts/or_batch_prices.py`.
 - [`scripts/build_hf_dataset.py`](scripts/build_hf_dataset.py): joins a snapshot's prices, tiers and API records into the HF dataset CSV and adds the `stable_endpoint` label (rule in the docstring). Checks columns against `hf/dataset/data_dictionary.json`.
+- [`scripts/diversity_probe.py`](scripts/diversity_probe.py): same-prompt sampling probe across models (scenario lists and dictations), with near-duplicate, clustering and n-gram overlap metrics. `with-secrets python3 -I scripts/diversity_probe.py reference/diversity/<date>`; reruns only failed calls.
 - [`scripts/price_tiers.py`](scripts/price_tiers.py): assigns each model in a batch-models CSV
   snapshot to a price tier (rubric in entry 07) and writes `<prefix>.csv` and `<prefix>.md`.
   Run with `python3 -I scripts/price_tiers.py <snapshot.csv> <out-prefix>`.
